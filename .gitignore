@@ -1,0 +1,44 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad
+xcuserdata/
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+!default.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# API Keys (keep private)
+*.p8
+
+# Build artifacts
+build/
+*.app
+
+# macOS
+.DS_Store
+
+# Claude Code / AI artifacts
+.claude/
+*.jsonl
+SETUP_GITHUB.md
+
+# AppStore working files
+AppStore/website-ready/
+AppStore/*.md

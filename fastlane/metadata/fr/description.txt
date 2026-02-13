@@ -1,0 +1,61 @@
+**La façon la plus intelligente de suivre les trains britanniques**
+
+trainTime est une application puissante et magnifiquement conçue pour suivre les départs de trains britanniques en direct et surveiller votre voyage en temps réel. Que vous fassiez la navette quotidiennement ou planifiez un voyage, trainTime vous tient informé avec des informations précises et à jour de National Rail.
+
+**FONCTIONNALITÉS PRINCIPALES**
+
+**Suivi des trains en direct**
+• Tableaux de départs en temps réel filtrés par votre destination
+• Voir les numéros de quai, retards et annulations instantanément
+• Suivre la progression du train avec position en direct sur une carte interactive
+• Heures d'arrivée estimées à chaque point d'arrêt
+
+**Live Activities**
+• Surveillez votre voyage sur l'écran de verrouillage et la Dynamic Island
+• Voir la gare actuelle, le prochain arrêt et l'ETA en direct d'un coup d'œil
+• Mises à jour automatiques toutes les 30 secondes pendant que votre train roule
+• Parfait pour suivre sans ouvrir l'application
+
+**Intégration CarPlay**
+• Affichez les prochains départs de votre voyage enregistré sur l'écran de votre voiture
+• Actualisation automatique toutes les 30 secondes pour les dernières informations
+• Parfait pour vérifier les horaires de train en conduisant vers la gare
+
+**Widget d'écran d'accueil**
+• Ajoutez un widget montrant le prochain départ pour votre voyage enregistré
+• Tailles de widget petite et moyenne disponibles
+• Mises à jour automatiques toutes les 15 minutes
+
+**Recherche de trajet par itinéraire**
+• Recherchez par destination, pas seulement par gare - ne voir que les trains pertinents
+• Enregistrer les trajets favoris pour un accès instantané
+• Historique des trajets récents pour une recherche rapide
+• Obtenir des directions vers la gare avec Apple Maps
+
+**Support hors ligne**
+• Voir les données de départ en cache hors ligne
+• Clairement marqué avec l'heure de la dernière mise à jour
+• Actualisation automatique au retour de la connexion
+
+**Fonctionnalités intelligentes**
+• Trouver des services alternatifs lorsque votre train est annulé
+• Retour haptique pour une meilleure interaction
+• L'actualisation automatique maintient les tableaux de départs à jour
+• Afficher les horaires complets et les points d'arrêt
+
+**Support multilingue**
+• Disponible en anglais, gallois, français, allemand et espagnol
+• Accessible avec support VoiceOver complet
+• Type dynamique pour les tailles de texte réglables
+
+**Design verre magnifique**
+• Interface moderne et translucide inspirée du langage de design iOS
+• Optimisé pour le mode sombre
+• Animations fluides et navigation intuitive
+
+**Données et confidentialité**
+• Données en direct de National Rail Darwin OpenLDBWS
+• Pas de suivi, pas de publicités, pas de collecte de données
+• Vos trajets sont stockés localement sur votre appareil uniquement
+
+trainTime est parfait pour les navetteurs, les voyageurs et tous ceux qui utilisent les services ferroviaires britanniques. Ne ratez plus jamais votre train avec les notifications en temps réel et le suivi de voyage en direct.
