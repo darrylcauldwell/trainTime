@@ -12,6 +12,7 @@ import SwiftData
 struct trainTimeApp: App {
     @State private var stationSearch = StationSearchService()
     @State private var apiService = HuxleyAPIService()
+    @State private var languageManager = LanguageManager.shared
     @State private var deepLinkOrigin: Station?
     @State private var deepLinkDestination: Station?
     @State private var showDeepLinkDepartures = false
@@ -34,6 +35,7 @@ struct trainTimeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(stationSearch: stationSearch, apiService: apiService)
+                .environment(\.locale, languageManager.currentLocale)
                 .onAppear {
                     stationSearch.loadStations()
                 }

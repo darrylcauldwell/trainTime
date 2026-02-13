@@ -30,6 +30,7 @@ fastlane/test_output
 # Build artifacts
 build/
 *.app
+Screenshots/
 
 # macOS
 .DS_Store

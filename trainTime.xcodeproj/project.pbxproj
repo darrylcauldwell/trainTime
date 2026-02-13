@@ -14,6 +14,7 @@
 		AA000005 /* GlassDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000005; };
 		AA000006 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000006; };
 		AA000007 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000007; };
+		AA100021 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100021; };
 		AA000008 /* SavedJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000008; };
 		AA000009 /* CachedDeparture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000009; };
 		AA000010 /* CachedServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000010; };
@@ -115,6 +116,7 @@
 		AB000005 /* GlassDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDesignSystem.swift; sourceTree = "<group>"; };
 		AB000006 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		AB000007 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		AB100021 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; name = AppLanguage.swift; sourceTree = "<group>"; };
 		AB000008 /* SavedJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJourney.swift; sourceTree = "<group>"; };
 		AB000009 /* CachedDeparture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedDeparture.swift; sourceTree = "<group>"; };
 		AB000010 /* CachedServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedServiceDetail.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				AB000007 /* Station.swift */,
+				AB100021 /* AppLanguage.swift */,
 				AB000008 /* SavedJourney.swift */,
 				AB000009 /* CachedDeparture.swift */,
 				AB000010 /* CachedServiceDetail.swift */,
@@ -513,7 +516,7 @@
 			};
 			buildConfigurationList = AF000001 /* Build configuration list for PBXProject "trainTime" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = en_GB;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -578,6 +581,7 @@
 				AA000005 /* GlassDesignSystem.swift in Sources */,
 				AA000006 /* Formatters.swift in Sources */,
 				AA000007 /* Station.swift in Sources */,
+				AA100021 /* AppLanguage.swift in Sources */,
 				AA000008 /* SavedJourney.swift in Sources */,
 				AA000009 /* CachedDeparture.swift in Sources */,
 				AA000010 /* CachedServiceDetail.swift in Sources */,
@@ -786,8 +790,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = trainTime/trainTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trainTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = trainTime;
@@ -820,8 +824,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = trainTime/trainTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trainTime/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = trainTime;
@@ -851,8 +855,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trainTimeWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = trainTimeWidget;
@@ -879,8 +883,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = trainTimeWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = trainTimeWidget;
@@ -907,8 +911,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = trainTimeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -933,8 +937,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = trainTimeUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

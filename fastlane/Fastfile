@@ -40,7 +40,7 @@ platform :ios do
       export_method: "app-store",
       project: "trainTime.xcodeproj",
       destination: "generic/platform=iOS",
-      xcargs: "-allowProvisioningUpdates -authenticationKeyPath '#{File.expand_path("fastlane/AuthKey_2QUU3J6S3D.p8")}' -authenticationKeyID 2QUU3J6S3D -authenticationKeyIssuerID 39bba98a-c143-49fe-ab48-839ff38b4edd",
+      xcargs: "-allowProvisioningUpdates",
       export_options: {
         signingStyle: "automatic",
         teamID: "N6BK2WX94Z"
@@ -74,7 +74,7 @@ platform :ios do
       export_method: "app-store",
       project: "trainTime.xcodeproj",
       destination: "generic/platform=iOS",
-      xcargs: "-allowProvisioningUpdates -authenticationKeyPath '#{File.expand_path("fastlane/AuthKey_2QUU3J6S3D.p8")}' -authenticationKeyID 2QUU3J6S3D -authenticationKeyIssuerID 39bba98a-c143-49fe-ab48-839ff38b4edd",
+      xcargs: "-allowProvisioningUpdates",
       export_options: {
         signingStyle: "automatic",
         teamID: "N6BK2WX94Z"
@@ -98,6 +98,25 @@ platform :ios do
       export_method: "app-store",
       project: "trainTime.xcodeproj",
       destination: "generic/platform=iOS"
+    )
+  end
+
+  desc "Create app in App Store Connect"
+  lane :create_app do
+    api_key = app_store_connect_api_key(
+      key_id: "2QUU3J6S3D",
+      issuer_id: "39bba98a-c143-49fe-ab48-839ff38b4edd",
+      key_filepath: "fastlane/AuthKey_2QUU3J6S3D.p8"
+    )
+
+    produce(
+      username: "darryl@dreamfold.dev",
+      app_identifier: "com.darrylcauldwell.trainTime",
+      app_name: "trainTime",
+      language: "English",
+      app_version: "1.0",
+      sku: "trainTime001",
+      team_id: "N6BK2WX94Z"
     )
   end
 end
