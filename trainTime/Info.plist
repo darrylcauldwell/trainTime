@@ -4,12 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_GB</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>trainTime uses your location to provide transit directions to railway stations.</string>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<key>NSSupportsLiveActivities</key>
-	<true/>
+	<key>CFBundleDisplayName</key>
+	<string>LiveRail</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>en-GB</string>
@@ -18,6 +14,12 @@
 		<string>de</string>
 		<string>es</string>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>trainTime uses your location to provide transit directions to railway stations.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

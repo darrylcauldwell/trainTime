@@ -11,7 +11,6 @@ struct SettingsView: View {
     @State private var apiToken: String = UserDefaults.standard.string(forKey: "darwinApiToken") ?? ""
     @State private var refreshInterval: Double = UserDefaults.standard.double(forKey: "refreshInterval")
     @State private var showClearCacheAlert = false
-    @State private var languageManager = LanguageManager.shared
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -33,24 +32,6 @@ struct SettingsView: View {
                     }
                 } header: {
                     Label(String(localized: "API Configuration"), systemImage: "key.fill")
-                }
-
-                // Language Selection
-                Section {
-                    Picker(String(localized: "App Language"), selection: $languageManager.selectedLanguage) {
-                        ForEach(AppLanguage.allCases) { language in
-                            HStack {
-                                Text(language.flag)
-                                Text(language.displayName)
-                            }
-                            .tag(language)
-                        }
-                    }
-                    .pickerStyle(.navigationLink)
-                } header: {
-                    Label(String(localized: "Language"), systemImage: "globe")
-                } footer: {
-                    Text(String(localized: "Choose 'System Default' to match your iPhone language settings, or select a specific language to override."))
                 }
 
                 // Refresh Settings

@@ -1,5 +1,5 @@
 # App Store Connect App Identifier
-app_identifier("com.darrylcauldwell.trainTime")
+app_identifier("dev.dreamfold.LiveRail")
 
 # Apple Developer Team ID
 team_id("N6BK2WX94Z")

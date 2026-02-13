@@ -1,7 +1,7 @@
 import Foundation
 import SwiftUI
 
-enum AppLanguage: String, CaseIterable, Identifiable {
+enum AppLanguage: String, CaseIterable, Identifiable, Hashable {
     case system = "system"
     case english = "en-GB"
     case welsh = "cy"
