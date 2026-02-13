@@ -110,7 +110,7 @@ platform :ios do
     )
 
     produce(
-      username: "darryl@dreamfold.dev",
+      username: "darryl_cauldwell@hotmail.com",
       app_identifier: "com.darrylcauldwell.trainTime",
       app_name: "trainTime",
       language: "English",
