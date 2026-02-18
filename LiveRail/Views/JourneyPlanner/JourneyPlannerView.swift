@@ -134,6 +134,8 @@ struct JourneyPlannerView: View {
             let fetchedJourneys = try await journeyService.planJourney(
                 from: origin.crs,
                 to: destination.crs,
+                originName: origin.name,
+                destinationName: destination.name,
                 departureTime: departureTime
             )
 

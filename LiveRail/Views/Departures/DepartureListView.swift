@@ -432,7 +432,9 @@ struct DepartureListView: View {
         do {
             journeys = try await journeyService.planJourney(
                 from: origin.crs,
-                to: destination.crs
+                to: destination.crs,
+                originName: origin.name,
+                destinationName: destination.name
             )
         } catch {
             journeyError = error.localizedDescription

@@ -78,7 +78,7 @@ final class SmartJourneyPlanner {
 
     // MARK: - Public API
 
-    func planJourney(from origin: String, to destination: String, departureTime: Date = Date()) async throws -> [Journey] {
+    func planJourney(from origin: String, to destination: String, originName: String = "", destinationName: String = "", departureTime: Date = Date()) async throws -> [Journey] {
         let interchanges = findInterchanges(from: origin, to: destination)
         guard !interchanges.isEmpty else {
             throw SmartPlannerError.noInterchangesFound
@@ -91,6 +91,7 @@ final class SmartJourneyPlanner {
                     interchange: interchange,
                     from: origin,
                     to: destination,
+                    originName: originName.isEmpty ? origin : originName,
                     departureTime: departureTime
                 )
                 allJourneys.append(contentsOf: journeys)
@@ -125,6 +126,7 @@ final class SmartJourneyPlanner {
         interchange: String,
         from origin: String,
         to destination: String,
+        originName: String,
         departureTime: Date
     ) async throws -> [Journey] {
         // Leg 1: arrivals at interchange filtered by origin
@@ -148,6 +150,7 @@ final class SmartJourneyPlanner {
             firstLeg: leg1Services,
             secondLeg: leg2Services,
             origin: origin,
+            originName: originName,
             arrivalInterchange: interchange,
             arrivalInterchangeName: leg1Board.locationName ?? interchange,
             departureInterchange: leg2Station,
@@ -169,6 +172,7 @@ final class SmartJourneyPlanner {
         firstLeg: [TrainService],
         secondLeg: [TrainService],
         origin: String,
+        originName: String,
         arrivalInterchange: String,
         arrivalInterchangeName: String,
         departureInterchange: String,
@@ -215,6 +219,7 @@ final class SmartJourneyPlanner {
                     firstService: service1,
                     secondService: service2,
                     origin: origin,
+                    originName: originName,
                     arrivalInterchange: arrivalInterchange,
                     arrivalInterchangeName: arrivalInterchangeName,
                     departureInterchange: departureInterchange,
@@ -237,6 +242,7 @@ final class SmartJourneyPlanner {
         firstService: TrainService,
         secondService: TrainService,
         origin: String,
+        originName: String,
         arrivalInterchange: String,
         arrivalInterchangeName: String,
         departureInterchange: String,
@@ -257,10 +263,10 @@ final class SmartJourneyPlanner {
             ?? TimeInterval(2 * 3600)
         let estimatedArrivalTime2 = departureTime2 + inboundDuration
 
-        // Locations
+        // Locations — use the user's searched origin, not the train's originating station
         let originLocation = JourneyLocation(
-            name: firstService.origin?.first?.locationName ?? origin,
-            crs: firstService.origin?.first?.crs ?? origin,
+            name: originName,
+            crs: origin,
             latitude: nil,
             longitude: nil
         )

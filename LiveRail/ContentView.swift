@@ -28,18 +28,24 @@ struct ContentView: View {
                 }
                 .tag(1)
 
+            HistoryView(stationSearch: stationSearch, apiService: apiService)
+                .tabItem {
+                    Label(String(localized: "History"), systemImage: "clock.arrow.2.circlepath")
+                }
+                .tag(2)
+
             SettingsView()
                 .tabItem {
                     Label(String(localized: "Settings"), systemImage: "gearshape.fill")
                 }
-                .tag(2)
+                .tag(3)
         }
         .tint(AppColors.primary)
         .onChange(of: selectedTab) { _, _ in
             HapticService.selection()
         }
         .onReceive(NotificationCenter.default.publisher(for: .navigateToSettings)) { _ in
-            selectedTab = 2
+            selectedTab = 3
         }
     }
 }

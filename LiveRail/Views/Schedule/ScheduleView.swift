@@ -186,7 +186,7 @@ struct ScheduleView: View {
                         Text(String(localized: "Date"))
                             .font(.caption)
                             .foregroundStyle(.secondary)
-                        DatePicker("", selection: $outboundDate, in: Date()...Date().addingTimeInterval(7*24*60*60), displayedComponents: .date)
+                        DatePicker("", selection: $outboundDate, in: Date()..., displayedComponents: .date)
                             .labelsHidden()
                             .datePickerStyle(.compact)
                     }
@@ -230,7 +230,7 @@ struct ScheduleView: View {
                             Text(String(localized: "Date"))
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
-                            DatePicker("", selection: $returnDate, in: outboundDate...outboundDate.addingTimeInterval(7*24*60*60), displayedComponents: .date)
+                            DatePicker("", selection: $returnDate, in: outboundDate..., displayedComponents: .date)
                                 .labelsHidden()
                                 .datePickerStyle(.compact)
                         }

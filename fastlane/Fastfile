@@ -126,11 +126,11 @@ platform :ios do
 
     produce(
       username: "darryl_cauldwell@hotmail.com",
-      app_identifier: "com.darrylcauldwell.trainTime",
-      app_name: "trainTime",
+      app_identifier: "dev.dreamfold.LiveRail",
+      app_name: "LiveRail",
       language: "English",
       app_version: "1.0",
-      sku: "trainTime001",
+      sku: "LiveRail001",
       team_id: "N6BK2WX94Z"
     )
   end

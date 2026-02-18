@@ -13,7 +13,7 @@ struct WidgetJourney: Codable {
     let destinationCRS: String
     let destinationName: String
 
-    static let appGroupID = "group.com.darrylcauldwell.trainTime"
+    static let appGroupID = "group.dev.dreamfold.LiveRail"
     static let userDefaultsKey = "widgetJourney"
 
     static func load() -> WidgetJourney? {

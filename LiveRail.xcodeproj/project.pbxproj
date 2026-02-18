@@ -51,6 +51,7 @@
 		AA000041 /* JourneyPlanningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000042 /* JourneyPlanningService.swift */; };
 		AA000042 /* SmartJourneyPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000043 /* SmartJourneyPlanner.swift */; };
 		AA000043 /* JourneyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000044 /* JourneyCard.swift */; };
+		AACD0003 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD0003 /* HistoryView.swift */; };
 		AA000044 /* JourneyPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000045 /* JourneyPlannerView.swift */; };
 		AA000045 /* JourneyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000046 /* JourneyDetailView.swift */; };
 		AA100001 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100001 /* HapticService.swift */; };
@@ -194,6 +195,7 @@
 		AB300005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB300006 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		EF64B127EB03914726953F1E /* HSPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HSPModels.swift; path = LiveRail/Models/API/HSPModels.swift; sourceTree = "<group>"; };
+		ABCD0003 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkRailHSPService.swift; path = LiveRail/Services/NetworkRailHSPService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,6 +324,7 @@
 				AD000016 /* SavedJourneys */,
 				AD000017 /* Settings */,
 				AD000018 /* JourneyPlanner */,
+				ABCD0005 /* History */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -439,6 +442,14 @@
 				AB000046 /* JourneyDetailView.swift */,
 			);
 			path = JourneyPlanner;
+			sourceTree = "<group>";
+		};
+		ABCD0005 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD0003 /* HistoryView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		AD100001 /* CarPlay */ = {
@@ -674,6 +685,7 @@
 				AA000041 /* JourneyPlanningService.swift in Sources */,
 				AA000042 /* SmartJourneyPlanner.swift in Sources */,
 				AA000043 /* JourneyCard.swift in Sources */,
+				AACD0003 /* HistoryView.swift in Sources */,
 				AA000044 /* JourneyPlannerView.swift in Sources */,
 				AA000045 /* JourneyDetailView.swift in Sources */,
 			);

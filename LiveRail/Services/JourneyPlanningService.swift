@@ -104,7 +104,7 @@ final class JourneyPlanningService {
     ///   - destination: Destination station CRS code
     ///   - departureTime: Desired departure time (defaults to now)
     /// - Returns: Array of Journey options
-    func planJourney(from origin: String, to destination: String, departureTime: Date = Date()) async throws -> [Journey] {
+    func planJourney(from origin: String, to destination: String, originName: String = "", destinationName: String = "", departureTime: Date = Date()) async throws -> [Journey] {
         switch provider {
         case .transportAPI:
             return try await planJourneyTransportAPI(from: origin, to: destination, departureTime: departureTime)
@@ -114,7 +114,7 @@ final class JourneyPlanningService {
             guard let smartPlanner = smartPlanner else {
                 throw JourneyPlanningError.smartPlannerNotConfigured
             }
-            return try await smartPlanner.planJourney(from: origin, to: destination, departureTime: departureTime)
+            return try await smartPlanner.planJourney(from: origin, to: destination, originName: originName, destinationName: destinationName, departureTime: departureTime)
         case .none:
             throw JourneyPlanningError.noAPIConfigured
         }
