@@ -1,8 +1,23 @@
-# Fastfile for trainTime
+# Fastfile for LiveRail
 
 default_platform(:ios)
 
 platform :ios do
+  desc "Build and install to simulator"
+  lane :simulator do
+    # Clean build folder
+    sh("rm -rf ../build")
+
+    # Build to local build directory
+    sh("cd .. && xcodebuild -project LiveRail.xcodeproj -target LiveRail -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 17 Pro' CONFIGURATION_BUILD_DIR=build CODE_SIGN_IDENTITY='' CODE_SIGNING_REQUIRED=NO build")
+
+    # Install to booted simulator
+    sh("xcrun simctl install booted ../build/LiveRail.app")
+
+    # Launch the app
+    sh("xcrun simctl launch booted dev.dreamfold.LiveRail")
+  end
+
   desc "Upload metadata and screenshots to App Store Connect"
   lane :metadata do
     upload_to_app_store(

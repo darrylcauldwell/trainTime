@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA300005 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300006; };
+		AA000001 /* trainTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000001; };
+		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000002; };
+		AA000003 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000003; };
+		AA000004 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000004; };
+		AA000005 /* GlassDesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000005; };
+		AA000006 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000006; };
+		AA000007 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000007; };
+		AA100021 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100021; };
+		AA000008 /* SavedJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000008; };
+		AA000009 /* CachedDeparture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000009; };
+		AA000010 /* CachedServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000010; };
+		AA000011 /* DepartureBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011; };
+		AA000012 /* TrainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000012; };
+		AA000013 /* ServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000013; };
+		AA000014 /* CallingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000014; };
+		AA000015 /* ServiceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000015; };
+		AA000016 /* HuxleyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000016; };
+		AA000017 /* StationSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000017; };
+		AA000018 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000018; };
+		AA000019 /* ConnectivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000019; };
+		AA000020 /* RefreshCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000020; };
+		AA000021 /* TrainPositionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000021; };
+		AA000022 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000022; };
+		AA000023 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000023; };
+		AA000024 /* JourneySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000024; };
+		AA000025 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000025; };
+		AA000026 /* DepartureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000026; };
+		AA000027 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000027; };
+		AA000028 /* ServiceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000028; };
+		AA000029 /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000029; };
+		AA000030 /* CallingPointRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000030; };
+		AA000031 /* TrainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000031; };
+		AA000032 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000032; };
+		AA000033 /* GetToStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000033; };
+		AA000034 /* SavedJourneysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000034; };
+		AA000035 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000035; };
+		AA000036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB000036; };
+		AA000037 /* uk_rail_stations.json in Resources */ = {isa = PBXBuildFile; fileRef = AB000037; };
+		AA100001 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100001; };
+		AA100002 /* RecentRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100002; };
+		AA100003 /* TrainActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100003; };
+		AA100004 /* LiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100004; };
+		AA100005 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100005; };
+		AA100006 /* CarPlayDepartureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100006; };
+		AA100007 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AB100007; };
+		AA100009 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100009; };
+		AA100010 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100010; };
+		AA100011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100011; };
+		AA100012 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100012; };
+		AA100013 /* WidgetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100013; };
+		AA100019 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB100019; };
+		AA100020 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB100020; };
+		AA100021 /* trainTimeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AB100018; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA200001 /* trainTimeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100014; };
+		AA200002 /* NextDepartureWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100015; };
+		AA200003 /* NextDepartureWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100016; };
+		AA200004 /* WidgetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100013; };
+		AA200005 /* TrainLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100017; };
+		AA200006 /* TrainActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100003; };
+		AA200007 /* DepartureBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011; };
+		AA200008 /* TrainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000012; };
+		AA200009 /* ServiceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000015; };
+		AA200010 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000006; };
+		AA300001 /* trainTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300001; };
+		AA300002 /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300002; };
+		AA300003 /* UITestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300003; };
+		AA300004 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300004; };
+		2746611DA6194E69A60819F1 /* RealTimeTrainsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECED8D97ABD64B1196E756A4 /* RealTimeTrainsAPIService.swift */; };
+		946FCCC5DC30491C917FEE77 /* RTTModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804B1896FCAA409D84BD6A2F /* RTTModels.swift */; };
+				EF79037F28D15B4BD487BDEB /* NetworkRailHSPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */; };
+		EF12387C8B2EC745D1933B98 /* HSPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64B127EB03914726953F1E /* HSPModels.swift */; };
+		/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE100007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE000004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE100001;
+			remoteInfo = trainTimeWidget;
+		};
+		AE300001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE000004 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE000001;
+			remoteInfo = trainTime;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE100005 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AA100021 /* trainTimeWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB000000 /* trainTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trainTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB000001 /* trainTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainTimeApp.swift; sourceTree = "<group>"; };
+		AB000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AB000003 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		AB300006 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		AB000004 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		AB000005 /* GlassDesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassDesignSystem.swift; sourceTree = "<group>"; };
+		AB000006 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		AB000007 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		AB100021 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		AB000008 /* SavedJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJourney.swift; sourceTree = "<group>"; };
+		AB000009 /* CachedDeparture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedDeparture.swift; sourceTree = "<group>"; };
+		AB000010 /* CachedServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedServiceDetail.swift; sourceTree = "<group>"; };
+		AB000011 /* DepartureBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureBoard.swift; sourceTree = "<group>"; };
+		AB000012 /* TrainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainService.swift; sourceTree = "<group>"; };
+		AB000013 /* ServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetail.swift; sourceTree = "<group>"; };
+		AB000014 /* CallingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingPoint.swift; sourceTree = "<group>"; };
+		AB000015 /* ServiceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocation.swift; sourceTree = "<group>"; };
+		AB000016 /* HuxleyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuxleyAPIService.swift; sourceTree = "<group>"; };
+		AB000017 /* StationSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSearchService.swift; sourceTree = "<group>"; };
+		AB000018 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		AB000019 /* ConnectivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityMonitor.swift; sourceTree = "<group>"; };
+		AB000020 /* RefreshCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshCoordinator.swift; sourceTree = "<group>"; };
+		AB000021 /* TrainPositionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainPositionCalculator.swift; sourceTree = "<group>"; };
+		AB000022 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		AB000023 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		AB000024 /* JourneySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneySearchView.swift; sourceTree = "<group>"; };
+		AB000025 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		AB000026 /* DepartureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureListView.swift; sourceTree = "<group>"; };
+		AB000027 /* DepartureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureRow.swift; sourceTree = "<group>"; };
+		AB000028 /* ServiceContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainerView.swift; sourceTree = "<group>"; };
+		AB000029 /* ServiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailView.swift; sourceTree = "<group>"; };
+		AB000030 /* CallingPointRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingPointRow.swift; sourceTree = "<group>"; };
+		AB000031 /* TrainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMapView.swift; sourceTree = "<group>"; };
+		AB000032 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		AB000033 /* GetToStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToStationView.swift; sourceTree = "<group>"; };
+		AB000034 /* SavedJourneysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJourneysView.swift; sourceTree = "<group>"; };
+		AB000035 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AB000036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB000037 /* uk_rail_stations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = uk_rail_stations.json; sourceTree = "<group>"; };
+		AB000038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB100001 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		AB100002 /* RecentRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRoute.swift; sourceTree = "<group>"; };
+		AB100003 /* TrainActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainActivityAttributes.swift; sourceTree = "<group>"; };
+		AB100004 /* LiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityService.swift; sourceTree = "<group>"; };
+		AB100005 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		AB100006 /* CarPlayDepartureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayDepartureItem.swift; sourceTree = "<group>"; };
+		AB100007 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		AB100008 /* trainTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = trainTime.entitlements; sourceTree = "<group>"; };
+		AB100009 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = cy.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB100010 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB100011 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB100012 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AB100013 /* WidgetJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetJourney.swift; sourceTree = "<group>"; };
+		AB100014 /* trainTimeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainTimeWidget.swift; sourceTree = "<group>"; };
+		AB100015 /* NextDepartureWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDepartureWidget.swift; sourceTree = "<group>"; };
+		AB100016 /* NextDepartureWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDepartureWidgetView.swift; sourceTree = "<group>"; };
+		AB100017 /* TrainLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainLiveActivity.swift; sourceTree = "<group>"; };
+		AB100018 /* trainTimeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = trainTimeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB100019 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		AB100020 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
+		AB300000 /* trainTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = trainTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB300001 /* trainTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainTimeUITests.swift; sourceTree = "<group>"; };
+		AB300002 /* ScreenshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotHelper.swift; sourceTree = "<group>"; };
+		AB300003 /* UITestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSetup.swift; sourceTree = "<group>"; };
+		AB300004 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		AB300005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECED8D97ABD64B1196E756A4 /* RealTimeTrainsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealTimeTrainsAPIService.swift; path = trainTime/Services/RealTimeTrainsAPIService.swift; sourceTree = "<group>"; };
+		804B1896FCAA409D84BD6A2F /* RTTModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RTTModels.swift; path = trainTime/Models/API/RTTModels.swift; sourceTree = "<group>"; };
+				EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkRailHSPService.swift; path = trainTime/Services/NetworkRailHSPService.swift; sourceTree = "<group>"; };
+		EF64B127EB03914726953F1E /* HSPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HSPModels.swift; path = trainTime/Models/API/HSPModels.swift; sourceTree = "<group>"; };
+		/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA100019 /* CarPlay.framework in Frameworks */,
+				AA100020 /* ActivityKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE100003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE300005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD000001 = {
+			isa = PBXGroup;
+			children = (
+				AD000002 /* trainTime */,
+				AD100002 /* trainTimeWidget */,
+				AD300001 /* trainTimeUITests */,
+				AD100007 /* Frameworks */,
+				AD000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD000002 /* trainTime */ = {
+			isa = PBXGroup;
+			children = (
+				AB000001 /* trainTimeApp.swift */,
+				AB000002 /* ContentView.swift */,
+				AB100008 /* trainTime.entitlements */,
+				AD000004 /* Models */,
+				AD000005 /* Services */,
+				AD000006 /* Views */,
+				AD000007 /* Utilities */,
+				AD100001 /* CarPlay */,
+				AD000008 /* Resources */,
+				AB000038 /* Info.plist */,
+				AB100009 /* InfoPlist.strings */,
+				AB100010 /* InfoPlist.strings */,
+				AB100011 /* InfoPlist.strings */,
+				AB100012 /* InfoPlist.strings */,
+			);
+			path = trainTime;
+			sourceTree = "<group>";
+		};
+		AD000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB000000 /* trainTime.app */,
+				AB100018 /* trainTimeWidgetExtension.appex */,
+				AB300000 /* trainTimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB000007 /* Station.swift */,
+				AB100021 /* AppLanguage.swift */,
+				AB000008 /* SavedJourney.swift */,
+				AB000009 /* CachedDeparture.swift */,
+				AB000010 /* CachedServiceDetail.swift */,
+				AB100002 /* RecentRoute.swift */,
+				AB100003 /* TrainActivityAttributes.swift */,
+				AD000009 /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB000016 /* HuxleyAPIService.swift */,
+				AB000017 /* StationSearchService.swift */,
+				AB000018 /* CacheService.swift */,
+				AB000019 /* ConnectivityMonitor.swift */,
+				AB000020 /* RefreshCoordinator.swift */,
+				AB000021 /* TrainPositionCalculator.swift */,
+				AB000022 /* LocationService.swift */,
+				AB000023 /* NavigationService.swift */,
+				AB100004 /* LiveActivityService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD000010 /* Search */,
+				AD000011 /* Departures */,
+				AD000012 /* ServiceDetail */,
+				AD000013 /* Map */,
+				AD000014 /* Schedule */,
+				AD000015 /* Navigation */,
+				AD000016 /* SavedJourneys */,
+				AD000017 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD000007 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB300006 /* Config.swift */,
+				AB000003 /* AppColors.swift */,
+				AB000004 /* DesignTokens.swift */,
+				AB000005 /* GlassDesignSystem.swift */,
+				AB000006 /* Formatters.swift */,
+				AB100001 /* HapticService.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AD000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB000036 /* Assets.xcassets */,
+				AB000037 /* uk_rail_stations.json */,
+				AB100007 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD000009 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AB000011 /* DepartureBoard.swift */,
+				AB000012 /* TrainService.swift */,
+				AB000013 /* ServiceDetail.swift */,
+				AB000014 /* CallingPoint.swift */,
+				AB000015 /* ServiceLocation.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AD000010 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AB000024 /* JourneySearchView.swift */,
+				AB000025 /* StationPickerView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD000011 /* Departures */ = {
+			isa = PBXGroup;
+			children = (
+				AB000026 /* DepartureListView.swift */,
+				AB000027 /* DepartureRow.swift */,
+			);
+			path = Departures;
+			sourceTree = "<group>";
+		};
+		AD000012 /* ServiceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AB000028 /* ServiceContainerView.swift */,
+				AB000029 /* ServiceDetailView.swift */,
+				AB000030 /* CallingPointRow.swift */,
+			);
+			path = ServiceDetail;
+			sourceTree = "<group>";
+		};
+		AD000013 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AB000031 /* TrainMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		AD000014 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				AB000032 /* ScheduleView.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		AD000015 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AB000033 /* GetToStationView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AD000016 /* SavedJourneys */ = {
+			isa = PBXGroup;
+			children = (
+				AB000034 /* SavedJourneysView.swift */,
+			);
+			path = SavedJourneys;
+			sourceTree = "<group>";
+		};
+		AD000017 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AB000035 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AD100001 /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				AB100005 /* CarPlaySceneDelegate.swift */,
+				AB100006 /* CarPlayDepartureItem.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+		AD100002 /* trainTimeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				AB100014 /* trainTimeWidget.swift */,
+				AB100015 /* NextDepartureWidget.swift */,
+				AB100016 /* NextDepartureWidgetView.swift */,
+				AB100013 /* WidgetJourney.swift */,
+				AB100017 /* TrainLiveActivity.swift */,
+			);
+			path = trainTimeWidget;
+			sourceTree = "<group>";
+		};
+		AD100007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB100019 /* CarPlay.framework */,
+				AB100020 /* ActivityKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD300001 /* trainTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB300001 /* trainTimeUITests.swift */,
+				AB300002 /* ScreenshotHelper.swift */,
+				AB300003 /* UITestSetup.swift */,
+				AB300004 /* TestHelpers.swift */,
+				AB300005 /* Info.plist */,
+			);
+			path = trainTimeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE000001 /* trainTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF000003 /* Build configuration list for PBXNativeTarget "trainTime" */;
+			buildPhases = (
+				AE000002 /* Sources */,
+				AC000001 /* Frameworks */,
+				AE000003 /* Resources */,
+				AE100005 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE100006 /* PBXTargetDependency */,
+			);
+			name = trainTime;
+			productName = trainTime;
+			productReference = AB000000 /* trainTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE100001 /* trainTimeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF100003 /* Build configuration list for PBXNativeTarget "trainTimeWidget" */;
+			buildPhases = (
+				AE100002 /* Sources */,
+				AE100003 /* Frameworks */,
+				AE100004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trainTimeWidget;
+			productName = trainTimeWidgetExtension;
+			productReference = AB100018 /* trainTimeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AE300000 /* trainTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF300001 /* Build configuration list for PBXNativeTarget "trainTimeUITests" */;
+			buildPhases = (
+				AE300003 /* Sources */,
+				AE300005 /* Frameworks */,
+				AE300004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE300002 /* PBXTargetDependency */,
+			);
+			name = trainTimeUITests;
+			productName = trainTimeUITests;
+			productReference = AB300000 /* trainTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE000004 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					AE000001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AE100001 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					AE300000 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = AE000001;
+					};
+				};
+			};
+			buildConfigurationList = AF000001 /* Build configuration list for PBXProject "trainTime" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en_GB;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				cy,
+				fr,
+				de,
+				es,
+			);
+			mainGroup = AD000001;
+			productRefGroup = AD000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE000001 /* trainTime */,
+				AE100001 /* trainTimeWidget */,
+				AE300000 /* trainTimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000036 /* Assets.xcassets in Resources */,
+				AA000037 /* uk_rail_stations.json in Resources */,
+				AA100007 /* Localizable.xcstrings in Resources */,
+				AA100009 /* InfoPlist.strings in Resources */,
+				AA100010 /* InfoPlist.strings in Resources */,
+				AA100011 /* InfoPlist.strings in Resources */,
+				AA100012 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE100004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE300004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA300005 /* Config.swift in Sources */,
+				AA000001 /* trainTimeApp.swift in Sources */,
+				AA000002 /* ContentView.swift in Sources */,
+				AA000003 /* AppColors.swift in Sources */,
+				AA000004 /* DesignTokens.swift in Sources */,
+				AA000005 /* GlassDesignSystem.swift in Sources */,
+				AA000006 /* Formatters.swift in Sources */,
+				AA000007 /* Station.swift in Sources */,
+				AA100021 /* AppLanguage.swift in Sources */,
+				AA000008 /* SavedJourney.swift in Sources */,
+				AA000009 /* CachedDeparture.swift in Sources */,
+				AA000010 /* CachedServiceDetail.swift in Sources */,
+				AA000011 /* DepartureBoard.swift in Sources */,
+				AA000012 /* TrainService.swift in Sources */,
+				AA000013 /* ServiceDetail.swift in Sources */,
+				AA000014 /* CallingPoint.swift in Sources */,
+				AA000015 /* ServiceLocation.swift in Sources */,
+				AA000016 /* HuxleyAPIService.swift in Sources */,
+				AA000017 /* StationSearchService.swift in Sources */,
+				AA000018 /* CacheService.swift in Sources */,
+				AA000019 /* ConnectivityMonitor.swift in Sources */,
+				AA000020 /* RefreshCoordinator.swift in Sources */,
+				AA000021 /* TrainPositionCalculator.swift in Sources */,
+				AA000022 /* LocationService.swift in Sources */,
+				AA000023 /* NavigationService.swift in Sources */,
+				AA000024 /* JourneySearchView.swift in Sources */,
+				AA000025 /* StationPickerView.swift in Sources */,
+				AA000026 /* DepartureListView.swift in Sources */,
+				AA000027 /* DepartureRow.swift in Sources */,
+				AA000028 /* ServiceContainerView.swift in Sources */,
+				AA000029 /* ServiceDetailView.swift in Sources */,
+				AA000030 /* CallingPointRow.swift in Sources */,
+				AA000031 /* TrainMapView.swift in Sources */,
+				AA000032 /* ScheduleView.swift in Sources */,
+				AA000033 /* GetToStationView.swift in Sources */,
+				AA000034 /* SavedJourneysView.swift in Sources */,
+				AA000035 /* SettingsView.swift in Sources */,
+				AA100001 /* HapticService.swift in Sources */,
+				AA100002 /* RecentRoute.swift in Sources */,
+				AA100003 /* TrainActivityAttributes.swift in Sources */,
+				AA100004 /* LiveActivityService.swift in Sources */,
+				AA100005 /* CarPlaySceneDelegate.swift in Sources */,
+				AA100006 /* CarPlayDepartureItem.swift in Sources */,
+				AA100013 /* WidgetJourney.swift in Sources */,
+							2746611DA6194E69A60819F1 /* RealTimeTrainsAPIService.swift in Sources */,
+				946FCCC5DC30491C917FEE77 /* RTTModels.swift in Sources */,
+				EF79037F28D15B4BD487BDEB /* NetworkRailHSPService.swift in Sources */,
+				EF12387C8B2EC745D1933B98 /* HSPModels.swift in Sources */,
+);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE100002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA200001 /* trainTimeWidget.swift in Sources */,
+				AA200002 /* NextDepartureWidget.swift in Sources */,
+				AA200003 /* NextDepartureWidgetView.swift in Sources */,
+				AA200004 /* WidgetJourney.swift in Sources */,
+				AA200005 /* TrainLiveActivity.swift in Sources */,
+				AA200006 /* TrainActivityAttributes.swift in Sources */,
+				AA200007 /* DepartureBoard.swift in Sources */,
+				AA200008 /* TrainService.swift in Sources */,
+				AA200009 /* ServiceLocation.swift in Sources */,
+				AA200010 /* Formatters.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE300003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA300001 /* trainTimeUITests.swift in Sources */,
+				AA300002 /* ScreenshotHelper.swift in Sources */,
+				AA300003 /* UITestSetup.swift in Sources */,
+				AA300004 /* TestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE100006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE100001 /* trainTimeWidget */;
+			targetProxy = AE100007 /* PBXContainerItemProxy */;
+		};
+		AE300002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE000001 /* trainTime */;
+			targetProxy = AE300001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AF000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF000006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = trainTime/trainTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trainTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trainTime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "trainTime uses your location to provide transit directions to railway stations.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF000007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = trainTime/trainTime.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trainTime/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trainTime;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "trainTime uses your location to provide transit directions to railway stations.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF100001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trainTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trainTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.widget;
+				PRODUCT_NAME = trainTimeWidgetExtension;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF100002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = trainTimeWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = trainTimeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.widget;
+				PRODUCT_NAME = trainTimeWidgetExtension;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF300002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = trainTimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = trainTime;
+			};
+			name = Debug;
+		};
+		AF300003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = N6BK2WX94Z;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = trainTimeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = trainTime;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF000001 /* Build configuration list for PBXProject "trainTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000004 /* Debug */,
+				AF000005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF000003 /* Build configuration list for PBXNativeTarget "trainTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF000006 /* Debug */,
+				AF000007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF100003 /* Build configuration list for PBXNativeTarget "trainTimeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF100001 /* Debug */,
+				AF100002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF300001 /* Build configuration list for PBXNativeTarget "trainTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF300002 /* Debug */,
+				AF300003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = AE000004 /* Project object */;
+}

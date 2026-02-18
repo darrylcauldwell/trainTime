@@ -1,61 +1,61 @@
-**Der intelligenteste Weg, britische Züge zu verfolgen**
+Der smarteste Weg, UK-Züge zu checken. Kein endloses Scrollen mehr durch Abfahrten, die dich nicht interessieren—nur deine Route, Live-Zeiten und Offline-Support.
 
-trainTime ist eine leistungsstarke, wunderschön gestaltete App zur Verfolgung von Live-Zugabfahrten in Großbritannien und zur Überwachung Ihrer Reise in Echtzeit. Ob Sie täglich pendeln oder eine Reise planen, trainTime hält Sie mit genauen, aktuellen Informationen von National Rail auf dem Laufenden.
+WARUM DU ES LIEBEN WIRST
 
-**HAUPTFUNKTIONEN**
+Schon mal am Bahnhof gestanden und auf die Tafel gestarrt, um DEINEN Zug zu finden? Das haben wir gelöst. Wähl aus, von wo nach wo du willst—zack, du siehst nur Direktverbindungen. Kein Durcheinander, kein Stress.
 
-**Live-Zugverfolgung**
-• Echtzeit-Abfahrtstafeln gefiltert nach Ihrem Ziel
-• Gleisnummern, Verspätungen und Ausfälle sofort sehen
-• Zugfortschritt mit Live-Position auf interaktiver Karte verfolgen
-• Geschätzte Ankunftszeiten an jedem Haltepunkt
+VERFOLGE DEINEN ZUG WIE EIN PROFI
 
-**Live Activities**
-• Überwachen Sie Ihre Reise auf dem Sperrbildschirm und der Dynamic Island
-• Sehen Sie aktuelle Station, nächster Halt und Live-ETA auf einen Blick
-• Automatische Updates alle 30 Sekunden während Ihr Zug fährt
-• Perfekt zum Verfolgen ohne die App zu öffnen
+• Sperrbildschirm-Tracking - Dein Zug folgt dir überall hin (auf gute Art). Dynamic Island Support inklusive
+• Home-Widget - Nächste Abfahrt direkt auf deinem Homescreen
+• Live-Karte - Schau zu, wie dein Zug zwischen Bahnhöfen fährt
+• Auto-Updates - Frische Zeiten alle 30 Sekunden. Kein manisches Aktualisieren mehr
 
-**CarPlay-Integration**
-• Zeigen Sie die nächsten Abfahrten Ihrer gespeicherten Reise auf Ihrem Autodisplay an
-• Aktualisiert automatisch alle 30 Sekunden für die neuesten Informationen
-• Perfekt zum Prüfen von Zugzeiten beim Fahren zum Bahnhof
+SMARTE SACHEN, DIE EINFACH FUNKTIONIEREN
 
-**Homescreen-Widget**
-• Fügen Sie ein Widget hinzu, das die nächste Abfahrt für Ihre gespeicherte Reise zeigt
-• Kleine und mittlere Widget-Größen verfügbar
-• Aktualisiert automatisch alle 15 Minuten
+• Gespeicherte Fahrten - Ein Tap für deinen täglichen Pendelweg
+• Letzte Routen - Wir merken uns deine letzten 15 Suchen
+• Zwei-Wege-Fahrplan - Hin- und Rückfahrt in einer Ansicht
+• Plan-B-Finder - Zug ausgefallen? Wir zeigen dir, was noch fährt
+• Anfahrts-Wegbeschreibung - Wie du wirklich zum Bahnhof kommst (London TfL eingebaut)
 
-**Routensuche nach Reiseziel**
-• Suche nach Ziel, nicht nur nach Bahnhof - nur relevante Züge sehen
-• Lieblingsreisen für sofortigen Zugriff speichern
-• Verlauf kürzlicher Reisen für schnelle Neusuche
-• Wegbeschreibung zum Bahnhof mit Apple Maps erhalten
+FUNKTIONIERT OFFLINE
 
-**Offline-Unterstützung**
-• Zwischengespeicherte Abfahrtsdaten offline anzeigen
-• Deutlich markiert mit letzter Aktualisierungszeit
-• Aktualisiert automatisch bei Rückkehr der Verbindung
+Signal im Tunnel verloren? Kein Problem. LiveRail cached alles, damit du nicht auf einen Ladekreisel starren musst. Du siehst, von wann die Daten sind, keine Überraschungen.
 
-**Intelligente Funktionen**
-• Alternative Verbindungen finden, wenn Ihr Zug ausfällt
-• Haptisches Feedback für bessere Interaktion
-• Auto-Aktualisierung hält Abfahrtstafeln aktuell
-• Vollständige Fahrpläne und Haltepunkte anzeigen
+SIEHT HAMMER AUS
 
-**Mehrsprachige Unterstützung**
-• Verfügbar in Englisch, Walisisch, Französisch, Deutsch und Spanisch
-• Barrierefrei mit vollständiger VoiceOver-Unterstützung
-• Dynamischer Typ für anpassbare Textgrößen
+• Glas-Design - Richtig modernes UI, nicht dieser 2010-Kram
+• Haptisches Feedback - Dein Handy vibriert zu den richtigen Momenten
+• Barrierefreiheit - VoiceOver und große Schrift? Erledigt
+• 5 Sprachen - Englisch, Walisisch, Französisch, Deutsch, Spanisch
 
-**Schönes Glas-Design**
-• Moderne, durchscheinende Oberfläche inspiriert von iOS-Designsprache
-• Für Dunkelmodus optimiert
-• Flüssige Animationen und intuitive Navigation
+WAS DU BEKOMMST
 
-**Daten & Datenschutz**
-• Live-Daten von National Rail Darwin OpenLDBWS
-• Kein Tracking, keine Werbung, keine Datenerfassung
-• Ihre Reisen werden nur lokal auf Ihrem Gerät gespeichert
+• 198 UK-Bahnhöfe (alle großen)
+• Live National Rail Daten (die offiziellen)
+• Gleise, Verspätungen, Ausfälle—alles
+• Betreiber-Infos, Halte, geplante Zeiten
+• Echtzeit-Statusupdates
 
-trainTime ist perfekt für Pendler, Reisende und alle, die britische Bahnverbindungen nutzen. Verpassen Sie nie wieder Ihren Zug mit Echtzeit-Benachrichtigungen und Live-Reiseverfolgung.
+DIE SCHNELLE LISTE
+
+✓ Zeigt nur Züge für deine Route
+✓ Live Activities am Sperrbildschirm
+✓ Homescreen-Widget
+✓ Live-Zugpositionskarte
+✓ Funktioniert offline mit gecachten Daten
+✓ Geh-/Verkehrswegbeschreibungen
+✓ Updates alle 30 Sekunden
+✓ Alternative Routen wenn's schiefgeht
+✓ Dark Mode (logisch)
+✓ Null Werbung, null Tracking
+
+FÜR WEN
+
+• Pendler, die täglich die gleiche Route checken
+• Alle, die eine Reise durch UK planen
+• Leute, die genervt sind von überladenen Zug-Apps
+• Zug-Nerds, die Live-Tracking wollen
+
+Kostenlos, privat, und für iOS 17+ gebaut. Kein Anmelde-Gedöns—einfach Bahnhöfe auswählen und los geht's.

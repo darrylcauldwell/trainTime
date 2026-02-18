@@ -1,61 +1,61 @@
-**Y ffordd glyfraf i drac trenau'r DU**
+Y ffordd glyfra' i wirio trenau'r DU. Dim mwy o sgrolio trwy gannoedd o wasanaethau nad oes gennych chi ddiddordeb ynddynt—dim ond eich taith chi, amseroedd byw, a chefnogaeth all-lein.
 
-Mae trainTime yn app hardd, pwerus ar gyfer tracio ymadawiadau trenau byw y DU a monitro eich taith mewn amser real. P'un a ydych chi'n cymudo'n ddyddiol neu'n cynllunio taith, mae trainTime yn eich cadw'n wybodus gyda gwybodaeth gywir, gyfredol o National Rail.
+PAM BYDDWCH CHI'N EI GARU
 
-**NODWEDDION ALLWEDDOL**
+Erioed wedi sefyll mewn gorsaf yn craffu ar y bwrdd, yn trio dod o hyd i'CH trên CHI? Rydyn ni wedi datrys hynny. Dewiswch o ble rydych chi'n dod ac i ble rydych chi'n mynd—bwm, dim ond gwasanaethau uniongyrchol welwch chi. Dim llanast, dim ffws.
 
-**Tracio Trenau Byw**
-• Byrddau ymadael amser real wedi'u hidlo yn ôl eich cyrchfan
-• Gweld rhifau platfform, oedi, a chanslo ar unwaith
-• Tracio cynnydd trên gyda safle byw ar fap rhyngweithiol
-• Amseroedd cyrraedd amcangyfrifedig ar bob man galw
+TRACIWCH EICH TRÊN FEL PROFFESIYNOL
 
-**Gweithgareddau Byw**
-• Monitro eich taith ar y Sgrin Glo a'r Dynamic Island
-• Gweld gorsaf bresennol, stop nesaf, ac ETA byw ar un olwg
-• Diweddariadau awtomatig bob 30 eiliad tra bo'ch trên yn symud
-• Perffaith ar gyfer cadw golwg heb agor yr app
+• Tracio Sgrin Glo - Mae'ch trên yn eich dilyn chi o gwmpas (mewn ffordd dda). Cefnogaeth Dynamic Island wedi'i gynnwys
+• Widget Cartref - Mae'r ymadawiad nesaf yno ar eich sgrin gartref
+• Map Byw - Gwyliwch eich gwasanaeth yn symud rhwng gorsafoedd
+• Diweddariadau Awtomatig - Amseroedd ffres bob 30 eiliad. Dim tapio adnewyddu fel person gwallgo
 
-**Integreiddio CarPlay**
-• Gweld ymadawiadau nesaf eich taith gadwedig ar arddangosfa'ch car
-• Adnewyddu'n awtomatig bob 30 eiliad am y wybodaeth ddiweddaraf
-• Perffaith ar gyfer gwirio amseroedd trenau wrth yrru i'r orsaf
+PETHAU CLYFAR SY'N GWEITHIO
 
-**Widget Sgrin Gartref**
-• Ychwanegu widget yn dangos yr ymadawiad nesaf ar gyfer eich taith gadwedig
-• Meintiau widget bach a chanolig ar gael
-• Diweddariadau bob 15 munud yn awtomatig
+• Teithiau wedi'u Cadw - Tapiwch unwaith ar gyfer eich taith ddyddiol
+• Llwybrau Diweddar - Rydyn ni'n cofio'ch 15 chwiliad diwethaf
+• Amserlen Dwy Ffordd - Trenau allan ac yn ôl mewn un olwg
+• Ffeindiwr Cynllun B - Trên wedi'i ganslo? Dangoswn ni beth sy'n dal i redeg
+• Cyfarwyddiadau Cyrraedd - Sut i gyrraedd yr orsaf go iawn (TfL Llundain wedi'i adeiladu i mewn)
 
-**Chwilio Taith yn ôl Llwybr**
-• Chwilio yn ôl cyrchfan, nid dim ond gorsaf - gweld trenau perthnasol yn unig
-• Cadw hoff deithiau ar gyfer mynediad cyflym
-• Hanes taith diweddar ar gyfer ail-chwilio cyflym
-• Cael cyfarwyddiadau i'r orsaf gan ddefnyddio Apple Maps
+GWEITHIO ALL-LEIN
 
-**Cefnogaeth All-lein**
-• Gweld data ymadael wedi'i storio pan yn all-lein
-• Wedi'i farcio'n glir gydag amser diweddariad diwethaf
-• Adnewyddu'n awtomatig pan ddaw'r cysylltiad yn ôl
+Wedi colli signal mewn twnnel? Dim problem. Mae LiveRail yn storio popeth felly dydych chi ddim yn sownd yn syllu ar droellwr. Byddwch chi'n gweld pryd mae'r data o, dim syndod.
 
-**Nodweddion Clyfar**
-• Dod o hyd i wasanaethau eraill pan gaiff eich trên ei ganslo
-• Adborth haptig ar gyfer rhyngweithio gwell
-• Mae adnewyddu awtomatig yn cadw byrddau ymadael yn gyfredol
-• Gweld amserlenni taith llawn a mannau galw
+EDRYCH YN WYCH
 
-**Cefnogaeth Aml-iaith**
-• Ar gael yn Saesneg, Cymraeg, Ffrangeg, Almaeneg, a Sbaeneg
-• Hygyrch gyda chefnogaeth VoiceOver llawn
-• Dynamic Type ar gyfer meintiau testun addasadwy
+• Dyluniad Gwydr - UI modern go iawn, nid y stwff 2010 yna
+• Dirgryniadau Haptig - Mae'ch ffôn yn dirgrynu ar yr adegau iawn
+• Hygyrchedd - VoiceOver a thestun mawr? Wedi'i sortio
+• 5 Iaith - Saesneg, Cymraeg, Ffrangeg, Almaeneg, Sbaeneg
 
-**Dyluniad Gwydr Hardd**
-• Rhyngwyneb modern, tryloyw wedi'i ysbrydoli gan iaith dylunio iOS
-• Wedi'i optimeiddio ar gyfer modd tywyll
-• Animeiddiadau llyfn a llywio greddfol
+BETH GEWCH CHI
 
-**Data a Phreifatrwydd**
-• Data byw o National Rail Darwin OpenLDBWS
-• Dim tracio, dim hysbysebion, dim casglu data
-• Mae eich teithiau wedi'u storio'n lleol ar eich dyfais yn unig
+• 198 gorsaf yn y DU (yr holl rai mawr)
+• Data byw National Rail (y stwff swyddogol)
+• Platfformau, oedi, canslo—y cwbl lot
+• Gwybodaeth gweithredwr, stopiau, amseroedd wedi'u trefnu
+• Diweddariadau statws amser real
 
-Mae trainTime yn berffaith ar gyfer cymudwyr, teithwyr, ac unrhyw un sy'n defnyddio gwasanaethau rheilffordd y DU. Peidiwch byth â cholli eich trên eto gyda hysbysiadau amser real a thracio taith byw.
+Y RHESTR GYFLYM
+
+✓ Dim ond trenau ar gyfer eich llwybr
+✓ Gweithgareddau Byw sgrin glo
+✓ Widget sgrin gartref
+✓ Map safle trên byw
+✓ Gweithio all-lein gyda data wedi'i storio
+✓ Cyfarwyddiadau cerdded/trafnidiaeth
+✓ Diweddaru bob 30 eiliad
+✓ Llwybrau amgen pan mae pethau'n mynd o chwith
+✓ Modd tywyll (yn amlwg)
+✓ Dim hysbysebion, dim tracio
+
+AR GYFER PWY
+
+• Cymudwyr sy'n gwirio'r un llwybr bob dydd
+• Unrhyw un sy'n cynllunio taith ar draws y DU
+• Pobl wedi blino ar apiau trên cymhleth
+• Geeks trên sydd eisiau tracio byw
+
+Am ddim, preifat, ac wedi'i adeiladu ar gyfer iOS 17+. Dim lol cofrestru—dim ond dewis eich gorsafoedd ac i ffwrdd â chi.

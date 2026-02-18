@@ -43,3 +43,12 @@ SETUP_GITHUB.md
 # AppStore working files
 AppStore/website-ready/
 AppStore/*.md
+
+# API Secrets
+.env
+*.env
+secrets.xcconfig
+
+# But DO commit:
+# Config.swift (obfuscated token is safe)
+

@@ -1,61 +1,61 @@
-**La façon la plus intelligente de suivre les trains britanniques**
+La façon la plus intelligente de vérifier les trains UK. Fini le défilement sans fin de départs qui ne vous concernent pas—juste votre trajet, horaires en direct et mode hors ligne.
 
-trainTime est une application puissante et magnifiquement conçue pour suivre les départs de trains britanniques en direct et surveiller votre voyage en temps réel. Que vous fassiez la navette quotidiennement ou planifiez un voyage, trainTime vous tient informé avec des informations précises et à jour de National Rail.
+POURQUOI VOUS ALLEZ ADORER
 
-**FONCTIONNALITÉS PRINCIPALES**
+Vous êtes déjà resté à la gare à plisser les yeux sur le tableau pour trouver VOTRE train ? On a réglé ça. Choisissez d'où vous partez et où vous allez—boum, vous ne voyez que les services directs. Pas de fouillis, pas de tracas.
 
-**Suivi des trains en direct**
-• Tableaux de départs en temps réel filtrés par votre destination
-• Voir les numéros de quai, retards et annulations instantanément
-• Suivre la progression du train avec position en direct sur une carte interactive
-• Heures d'arrivée estimées à chaque point d'arrêt
+SUIVEZ VOTRE TRAIN COMME UN PRO
 
-**Live Activities**
-• Surveillez votre voyage sur l'écran de verrouillage et la Dynamic Island
-• Voir la gare actuelle, le prochain arrêt et l'ETA en direct d'un coup d'œil
-• Mises à jour automatiques toutes les 30 secondes pendant que votre train roule
-• Parfait pour suivre sans ouvrir l'application
+• Suivi Écran Verrouillé - Votre train vous suit partout (dans le bon sens). Support Dynamic Island inclus
+• Widget Accueil - Le prochain départ directement sur votre écran d'accueil
+• Carte en Direct - Regardez votre service avancer entre les gares
+• Mises à Jour Auto - Horaires frais toutes les 30 secondes. Plus besoin d'appuyer sur actualiser comme un fou
 
-**Intégration CarPlay**
-• Affichez les prochains départs de votre voyage enregistré sur l'écran de votre voiture
-• Actualisation automatique toutes les 30 secondes pour les dernières informations
-• Parfait pour vérifier les horaires de train en conduisant vers la gare
+DES TRUCS MALINS QUI MARCHENT
 
-**Widget d'écran d'accueil**
-• Ajoutez un widget montrant le prochain départ pour votre voyage enregistré
-• Tailles de widget petite et moyenne disponibles
-• Mises à jour automatiques toutes les 15 minutes
+• Trajets Sauvegardés - Un tap pour votre trajet quotidien
+• Itinéraires Récents - On se souvient de vos 15 dernières recherches
+• Horaires Bidirectionnels - Aller et retour dans une seule vue
+• Trouveur de Plan B - Train annulé ? On vous montre ce qui roule encore
+• Directions Pour Y Aller - Comment vraiment rejoindre la gare (TfL Londres intégré)
 
-**Recherche de trajet par itinéraire**
-• Recherchez par destination, pas seulement par gare - ne voir que les trains pertinents
-• Enregistrer les trajets favoris pour un accès instantané
-• Historique des trajets récents pour une recherche rapide
-• Obtenir des directions vers la gare avec Apple Maps
+FONCTIONNE HORS LIGNE
 
-**Support hors ligne**
-• Voir les données de départ en cache hors ligne
-• Clairement marqué avec l'heure de la dernière mise à jour
-• Actualisation automatique au retour de la connexion
+Signal perdu dans un tunnel ? Pas de souci. LiveRail met tout en cache pour ne pas rester bloqué à fixer un spinner. Vous verrez la date des données, sans surprise.
 
-**Fonctionnalités intelligentes**
-• Trouver des services alternatifs lorsque votre train est annulé
-• Retour haptique pour une meilleure interaction
-• L'actualisation automatique maintient les tableaux de départs à jour
-• Afficher les horaires complets et les points d'arrêt
+MAGNIFIQUE DESIGN
 
-**Support multilingue**
-• Disponible en anglais, gallois, français, allemand et espagnol
-• Accessible avec support VoiceOver complet
-• Type dynamique pour les tailles de texte réglables
+• Design Verre - UI moderne de qualité, pas ce truc de 2010
+• Vibrations Haptiques - Votre téléphone vibre aux bons moments
+• Accessibilité - VoiceOver et gros texte ? Réglé
+• 5 Langues - Anglais, Gallois, Français, Allemand, Espagnol
 
-**Design verre magnifique**
-• Interface moderne et translucide inspirée du langage de design iOS
-• Optimisé pour le mode sombre
-• Animations fluides et navigation intuitive
+CE QUE VOUS OBTENEZ
 
-**Données et confidentialité**
-• Données en direct de National Rail Darwin OpenLDBWS
-• Pas de suivi, pas de publicités, pas de collecte de données
-• Vos trajets sont stockés localement sur votre appareil uniquement
+• 198 gares UK (toutes les grandes)
+• Données National Rail en direct (les officielles)
+• Quais, retards, annulations—tout
+• Infos opérateur, arrêts, horaires prévus
+• Mises à jour de statut en temps réel
 
-trainTime est parfait pour les navetteurs, les voyageurs et tous ceux qui utilisent les services ferroviaires britanniques. Ne ratez plus jamais votre train avec les notifications en temps réel et le suivi de voyage en direct.
+LA LISTE RAPIDE
+
+✓ Affiche uniquement les trains de votre trajet
+✓ Activités en Direct écran verrouillé
+✓ Widget écran d'accueil
+✓ Carte de position du train en direct
+✓ Fonctionne hors ligne avec données en cache
+✓ Directions à pied/transports
+✓ Mise à jour toutes les 30 secondes
+✓ Itinéraires alternatifs quand ça se passe mal
+✓ Mode sombre (évidemment)
+✓ Zéro pub, zéro tracking
+
+POUR QUI
+
+• Les pendulaires qui vérifient le même trajet chaque jour
+• Tous ceux qui planifient un voyage au Royaume-Uni
+• Les gens fatigués des apps train encombrées
+• Les geeks du train qui veulent un suivi en direct
+
+Gratuit, privé, et conçu pour iOS 17+. Pas de galère d'inscription—juste choisir vos gares et c'est parti.
