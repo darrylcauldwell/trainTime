@@ -16,11 +16,8 @@ extension XCTestCase {
     func navigateToDepartures(from originCRS: String, to destinationCRS: String, screenshot: ScreenshotHelper? = nil) {
         let app = self.app
 
-        // Ensure we're on search tab
-        let searchTab = app.buttons["Search"]
-        if searchTab.exists {
-            searchTab.tap()
-        }
+        // Ensure we're on the Departures tab
+        navigateToTab("Departures")
 
         // Select origin station
         app.buttons["From"].tap()
@@ -41,34 +38,35 @@ extension XCTestCase {
     func selectStation(crs: String) {
         let app = self.app
 
-        // Wait for station picker to appear
-        let searchField = app.textFields["Search Stations"]
-        _ = searchField.waitForExistence(timeout: 2.0)
-
-        // Type CRS code (faster than full name)
+        // .searchable() creates a UISearchBar exposed as app.searchFields
+        let searchField = app.searchFields.firstMatch
+        _ = searchField.waitForExistence(timeout: 5.0)
         searchField.tap()
         searchField.typeText(crs)
 
-        // Tap the first result (should be exact match)
-        let firstStation = app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", crs)).firstMatch
-        _ = firstStation.waitForExistence(timeout: 2.0)
-        firstStation.tap()
-    }
+        // Station result buttons have format "Station Name (CRS)" — exclude recent-route
+        // buttons whose labels contain " - " (e.g. "Chesterfield, London STP, CHD - STP")
+        let stationPredicate = NSPredicate(
+            format: "label CONTAINS[c] %@ AND NOT (label CONTAINS[c] ' - ')", crs
+        )
+        let firstStation = app.buttons.matching(stationPredicate).firstMatch
+        _ = firstStation.waitForExistence(timeout: 3.0)
 
-    /// Navigate to a specific tab
-    func navigateToTab(_ tabName: String) {
-        let app = self.app
-        let tab = app.buttons[tabName]
-        if tab.exists && !tab.isSelected {
-            tab.tap()
+        if firstStation.isHittable {
+            firstStation.tap()
+        } else {
+            // Scroll picker list up to bring result into view then retry
+            app.swipeUp()
+            firstStation.tap()
         }
     }
 
-    /// Tap the first departure row
-    func tapFirstDeparture() {
+    /// Navigate to a tab using the floating glass tab bar
+    func navigateToTab(_ tabName: String) {
         let app = self.app
-        let firstDeparture = app.buttons.matching(identifier: "departure-row").firstMatch
-        _ = firstDeparture.waitForExistence(timeout: 5.0)
-        firstDeparture.tap()
+        let tab = app.buttons[tabName]
+        if tab.waitForExistence(timeout: 3.0) {
+            tab.tap()
+        }
     }
 }

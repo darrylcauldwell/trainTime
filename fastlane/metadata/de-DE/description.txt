@@ -1,0 +1,42 @@
+LiveRail – die intelligenteste Art, Live-Abfahrten britischer Züge zu verfolgen. Suche nach Route statt nach Bahnhof und sieh nur die Züge, die für deine Reise wirklich relevant sind.
+
+NUR DEINE ZÜGE, NICHTS ANDERES
+
+Kennst du das? Du stehst am Bahnhof und suchst zwischen vierzig Einträgen auf der Anzeigetafel nach DEINEM Zug? Das haben wir gelöst. Wähle Start und Ziel – du siehst nur Direktverbindungen. Kein Durcheinander, keine Verwirrung.
+
+ALTERNATIVE ROUTEN
+
+Wenn ein Zug ausfällt, zeigt ein Tipp alle noch fahrenden Dienste auf derselben Strecke – damit du weiterkommst, anstatt auf eine rote Tafel zu starren.
+
+VERBINDUNGEN MIT UMSTIEG
+
+Wenn kein Direktzug verfügbar ist, sucht LiveRail automatisch nach Verbindungen mit Umstieg – mit vollständigen Abschnittsdetails zu jedem Zug, Gleis und Anschluss.
+
+NACH HAUSE KOMMEN
+
+Lege deinen Heimatbahnhof einmal fest. Tippe jederzeit auf „Nach Hause“ und LiveRail nutzt deinen Standort, um die nächsten Bahnhöfe zu finden und verfügbare Züge nach Hause anzuzeigen. In London werden auch TfL-Fahrverbindungen angezeigt, damit du den richtigen Bahnsteig erreichst.
+
+CARPLAY
+
+Sieh Live-Abfahrten für deine gespeicherte Route freiehändig auf dem Display deines Fahrzeugs. Pünktlich, verspätet mit voraussichtlicher Abfahrtszeit und ausgefallene Dienste auf einen Blick.
+
+OFFLINE-UNTERSTÜTZUNG
+
+Kein Signal im Tunnel? LiveRail speichert deine letzten Abfahrtstafeln im Cache. Ein Zeitstempel zeigt dir immer, wann die Daten zuletzt aktualisiert wurden.
+
+GESPEICHERTE & LETZTE ROUTEN
+
+Speichere deine Lieblingsverbindungen für Direktzugriff. LiveRail merkt sich auch deine letzten 15 Routen, mit der Option, die täglichen anzuheften.
+
+DIE FAKTEN
+
+• Alle 2.595 britischen Bahnhöfe enthalten
+• Live-Daten von National Rail Enquiries (Darwin OpenLDBWS – die offizielle Quelle)
+• Gleise, Verspätungen, Ausfälle und Verspätungsgründe werden angezeigt
+• Betreiberinformationen und Waggonanzahl
+• Automatische Aktualisierung alle 30 Sekunden (einstellbar: 15 Sekunden bis 2 Minuten)
+• Vollständig barrierefrei: VoiceOver und Dynamische Schriftgröße unterstützt
+• Verfügbar auf Englisch, Französisch, Deutsch und Spanisch
+• Keine Werbung, keine Registrierung, kein Tracking
+
+Erfordert iOS 17 oder neuer. CarPlay erfordert ein kompatibles Fahrzeug und eine entsprechende Verbindung.

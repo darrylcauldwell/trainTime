@@ -9,14 +9,37 @@ import CarPlay
 
 enum CarPlayDepartureItem {
     static func listItem(from service: TrainService) -> CPListItem {
-        let time = service.departureTime
-        let status = service.status.displayText
-        let platform = service.platform.map { "P\($0)" } ?? ""
+        let scheduled = service.std ?? service.departureTime
 
-        let title = "\(time)  \(service.destinationName)"
-        let detail = "\(status)  \(platform)"
+        // Build time string: show estimated alongside scheduled when delayed
+        let timeText: String
+        if service.status == .delayed, let eta = service.etd, eta != scheduled, eta != "On time" {
+            timeText = "\(scheduled) → \(eta)"
+        } else {
+            timeText = scheduled
+        }
 
-        let item = CPListItem(text: title, detailText: detail)
+        let title = "\(timeText)  \(service.destinationName)"
+
+        // Build detail: status + platform
+        var detailParts: [String] = []
+        switch service.status {
+        case .onTime:
+            detailParts.append("On time")
+        case .delayed:
+            if let eta = service.etd, eta != "On time" {
+                detailParts.append("Delayed – exp. \(eta)")
+            } else {
+                detailParts.append("Delayed")
+            }
+        case .cancelled:
+            detailParts.append("Cancelled")
+        }
+        if let platform = service.platform {
+            detailParts.append("Platform \(platform)")
+        }
+
+        let item = CPListItem(text: title, detailText: detailParts.joined(separator: "  ·  "))
         return item
     }
 }

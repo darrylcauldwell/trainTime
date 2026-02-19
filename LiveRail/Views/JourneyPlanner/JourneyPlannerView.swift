@@ -109,6 +109,7 @@ struct JourneyPlannerView: View {
                     } label: {
                         Image(systemName: "arrow.clockwise")
                     }
+                    .accessibilityLabel(String(localized: "Refresh journeys"))
                     .disabled(isLoading)
                 }
             }
@@ -136,7 +137,11 @@ struct JourneyPlannerView: View {
                 to: destination.crs,
                 originName: origin.name,
                 destinationName: destination.name,
-                departureTime: departureTime
+                departureTime: departureTime,
+                originLat: origin.lat,
+                originLon: origin.lon,
+                destLat: destination.lat,
+                destLon: destination.lon
             )
 
             journeys = fetchedJourneys
@@ -281,4 +286,5 @@ struct JourneyPlannerView: View {
 
 extension Notification.Name {
     static let navigateToSettings = Notification.Name("navigateToSettings")
+    static let routeChanged = Notification.Name("routeChanged")
 }

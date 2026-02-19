@@ -45,24 +45,6 @@ final class HuxleyAPIService {
         return try await fetch(path: path)
     }
 
-    /// Fetch all departures and arrivals from a station (unfiltered), with optional time offset
-    func fetchAllDepartures(from station: String, timeOffset: Int = 0, rows: Int = 20) async throws -> DepartureBoard {
-        let path = "/all/\(station)/\(rows)"
-        var queryParams: [String: String] = [:]
-        if timeOffset != 0 {
-            let clamped = max(-120, min(120, timeOffset))
-            queryParams["timeOffset"] = String(clamped)
-        }
-        return try await fetch(path: path, queryParams: queryParams)
-    }
-
-    /// Fetch detailed service information by service ID
-    func fetchServiceDetail(serviceID: String) async throws -> ServiceDetail {
-        let encodedID = serviceID.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? serviceID
-        let path = "/service/\(encodedID)"
-        return try await fetch(path: path)
-    }
-
     /// Fetch departures for schedule view with optional date/time
     func fetchScheduleDepartures(from origin: String, to destination: String, at departureTime: Date? = nil, rows: Int = 20) async throws -> DepartureBoard {
         // Note: Huxley2 doesn't support row count in path for filtered departures

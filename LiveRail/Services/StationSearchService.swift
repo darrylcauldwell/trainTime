@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 @Observable
 final class StationSearchService {
@@ -61,5 +62,22 @@ final class StationSearchService {
     /// Find station by CRS code (O(1) dictionary lookup)
     func station(forCRS crs: String) -> Station? {
         crsDictionary[crs.uppercased()]
+    }
+
+    /// Find the nearest station to a GPS coordinate
+    func nearestStation(to location: CLLocation) -> Station? {
+        nearestStations(to: location, count: 1).first
+    }
+
+    /// Find the N nearest stations to a GPS coordinate, sorted by distance
+    func nearestStations(to location: CLLocation, count: Int) -> [Station] {
+        guard !allStations.isEmpty else { return [] }
+        return allStations
+            .sorted {
+                location.distance(from: CLLocation(latitude: $0.lat, longitude: $0.lon)) <
+                location.distance(from: CLLocation(latitude: $1.lat, longitude: $1.lon))
+            }
+            .prefix(count)
+            .map { $0 }
     }
 }

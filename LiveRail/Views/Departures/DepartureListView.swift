@@ -20,10 +20,8 @@ struct DepartureListView: View {
     @State private var errorMessage: String?
     @State private var isOffline = false
     @State private var cachedTime: Date?
-    @State private var selectedService: TrainService?
     @State private var refreshCoordinator = RefreshCoordinator()
     @State private var connectivityMonitor = ConnectivityMonitor()
-    @State private var showAlternatives = false
     @State private var earlierTrainsCount = 4
     @State private var laterTrainsCount = 4
     @State private var showJourneyPlanner = false
@@ -147,26 +145,7 @@ struct DepartureListView: View {
                             }
 
                             ForEach(visibleDeparted) { service in
-                                Button {
-                                    HapticService.lightImpact()
-                                    selectedService = service
-                                } label: {
-                                    DepartureRow(service: service)
-                                }
-                                .buttonStyle(.plain)
-
-                                if service.isCancelled == true {
-                                    Button {
-                                        HapticService.warning()
-                                        showAlternatives = true
-                                    } label: {
-                                        Label(String(localized: "Find Alternatives"), systemImage: "arrow.triangle.branch")
-                                            .font(.caption.bold())
-                                            .foregroundStyle(AppColors.accent)
-                                    }
-                                    .padding(.horizontal, Spacing.xl)
-                                    .padding(.bottom, Spacing.sm)
-                                }
+                                DepartureRow(service: service)
                             }
 
                             // Divider between departed and upcoming
@@ -189,26 +168,7 @@ struct DepartureListView: View {
                         let visibleUpcoming = Array(upcomingTrains.prefix(laterTrainsCount))
 
                         ForEach(visibleUpcoming) { service in
-                            Button {
-                                HapticService.lightImpact()
-                                selectedService = service
-                            } label: {
-                                DepartureRow(service: service)
-                            }
-                            .buttonStyle(.plain)
-
-                            if service.isCancelled == true {
-                                Button {
-                                    HapticService.warning()
-                                    showAlternatives = true
-                                } label: {
-                                    Label(String(localized: "Find Alternatives"), systemImage: "arrow.triangle.branch")
-                                        .font(.caption.bold())
-                                        .foregroundStyle(AppColors.accent)
-                                }
-                                .padding(.horizontal, Spacing.xl)
-                                .padding(.bottom, Spacing.sm)
-                            }
+                            DepartureRow(service: service)
                         }
 
                         if upcomingTrains.count > laterTrainsCount {
@@ -248,6 +208,7 @@ struct DepartureListView: View {
                     } label: {
                         Image(systemName: "arrow.clockwise")
                     }
+                    .accessibilityLabel(String(localized: "Refresh departures"))
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
@@ -256,25 +217,8 @@ struct DepartureListView: View {
                 } label: {
                     Image(systemName: "figure.walk.departure")
                 }
+                .accessibilityLabel(String(localized: "Get to station"))
             }
-        }
-        .navigationDestination(item: $selectedService) { service in
-            if let serviceID = service.serviceID {
-                ServiceContainerView(
-                    serviceID: serviceID,
-                    serviceSummary: service,
-                    apiService: apiService,
-                    stationSearch: stationSearch
-                )
-            }
-        }
-        .sheet(isPresented: $showAlternatives) {
-            AlternativeRoutesView(
-                origin: origin,
-                destination: destination,
-                apiService: apiService,
-                stationSearch: stationSearch
-            )
         }
         .sheet(isPresented: $showJourneyPlanner) {
             JourneyPlannerView(
@@ -434,7 +378,11 @@ struct DepartureListView: View {
                 from: origin.crs,
                 to: destination.crs,
                 originName: origin.name,
-                destinationName: destination.name
+                destinationName: destination.name,
+                originLat: origin.lat,
+                originLon: origin.lon,
+                destLat: destination.lat,
+                destLon: destination.lon
             )
         } catch {
             journeyError = error.localizedDescription
@@ -461,65 +409,3 @@ struct DepartureListView: View {
     }
 }
 
-// MARK: - Alternative Routes View (for cancelled trains)
-
-struct AlternativeRoutesView: View {
-    @Environment(\.dismiss) private var dismiss
-    let origin: Station
-    let destination: Station
-    let apiService: HuxleyAPIService
-    let stationSearch: StationSearchService
-
-    @State private var alternatives: [TrainService] = []
-    @State private var isLoading = true
-
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                if isLoading {
-                    ProgressView(String(localized: "Finding alternatives..."))
-                        .padding(.top, Spacing.jumbo)
-                } else if alternatives.isEmpty {
-                    ContentUnavailableView(
-                        String(localized: "No Alternatives"),
-                        systemImage: "exclamationmark.triangle",
-                        description: Text(String(localized: "No alternative services found"))
-                    )
-                } else {
-                    VStack(spacing: Spacing.sm) {
-                        Text("Running services from \(origin.name) to \(destination.name)")
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                            .padding()
-
-                        ForEach(alternatives) { service in
-                            DepartureRow(service: service)
-                        }
-                    }
-                }
-            }
-            .navigationTitle(String(localized: "Alternatives"))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button(String(localized: "Close")) { dismiss() }
-                }
-            }
-            .glassNavigation()
-            .task {
-                await findAlternatives()
-            }
-        }
-    }
-
-    private func findAlternatives() async {
-        isLoading = true
-        do {
-            let board = try await apiService.fetchDepartures(from: origin.crs, to: destination.crs, rows: 20)
-            alternatives = board.services.filter { $0.isCancelled != true }
-        } catch {
-            alternatives = []
-        }
-        isLoading = false
-    }
-}

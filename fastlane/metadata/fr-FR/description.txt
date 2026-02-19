@@ -1,0 +1,42 @@
+LiveRail – la façon la plus intelligente de suivre les départs de trains en direct à travers le Royaume-Uni. Recherchez par trajet, pas seulement par gare, et voyez uniquement les trains qui comptent pour votre voyage.
+
+UNIQUEMENT VOS TRAINS, RIEN D’AUTRE
+
+Vous êtes déjà resté en gare à scruter le tableau pour trouver VOTRE train parmi quarante autres ? Nous avons résolu ça. Choisissez votre départ et votre destination – vous ne voyez que les services directs. Pas de confusion, pas de superflu.
+
+ITÍNÉRAIRES ALTERNATIFS
+
+En cas d’annulation, un tap suffit pour voir les autres services encore en circulation sur le même itinéraire.
+
+CORRESPONDANCES
+
+Quand aucun service direct n’est disponible, LiveRail recherche automatiquement des correspondances, avec le détail complet de chaque tronçon : train, quai et temps de correspondance.
+
+RENTRER CHEZ SOI
+
+Définissez votre gare de domicile une seule fois. Appuyez sur « Rentrer chez moi » et LiveRail utilise votre position pour trouver les gares les plus proches et afficher les trains disponibles. À Londres, il affiche aussi les itinéraires TfL pour rejoindre le bon quai.
+
+CARPLAY
+
+Consultez les départs en direct pour votre trajet enregistré sur l’écran de votre véhicule, en mode mains libres. À l’heure, retardé avec l’heure prévue, ou annulé – tout d’un coup d’œil.
+
+SUPPORT HORS LIGNE
+
+Pas de signal dans le tunnel ? LiveRail met en cache vos tableaux de départs récents. Vous verrez toujours un horodatage pour savoir quand les données ont été actualisées.
+
+TRAJETS ENREGISTRÉS & RÉCENTS
+
+Enregistrez vos trajets favoris pour un accès en un tap. LiveRail mémorise aussi vos 15 derniers trajets, avec la possibilité d’épingler ceux que vous utilisez quotidiennement.
+
+LES FAITS
+
+• Les 2 595 gares ferroviaires britanniques incluses
+• Données en direct de National Rail Enquiries (Darwin OpenLDBWS – la source officielle)
+• Quais, retards, annulations et motifs de retard affichés
+• Informations sur l’opérateur et le nombre de voitures
+• Actualisation automatique toutes les 30 secondes (configurable : 15 secondes à 2 minutes)
+• Entièrement accessible : VoiceOver et Police dynamique pris en charge
+• Disponible en anglais, français, allemand et espagnol
+• Zéro publicité, zéro compte requis, zéro suivi
+
+Nécessite iOS 17 ou version ultérieure. CarPlay nécessite un véhicule et une connexion compatibles.

@@ -18,7 +18,44 @@ platform :ios do
     sh("xcrun simctl launch booted dev.dreamfold.LiveRail")
   end
 
-  desc "Upload metadata and screenshots to App Store Connect"
+  desc "Run UI tests on both device sizes and extract screenshots to fastlane/screenshots"
+  lane :take_screenshots do
+    locales = ["en-GB", "fr-FR", "de-DE", "es-ES"]
+    devices = [
+      { name: "iPhone 17 Pro Max", tag: "iPhone-17-Pro-Max" },
+      { name: "iPhone 17 Pro",     tag: "iPhone-17-Pro" }
+    ]
+
+    devices.each do |device|
+      result_path = "/tmp/LiveRail-screenshots-#{device[:tag]}.xcresult"
+      sh("rm -rf '#{result_path}'")
+
+      UI.message("📸 Running screenshot tests on #{device[:name]}...")
+      sh("cd .. && xcodebuild test \
+        -project LiveRail.xcodeproj \
+        -scheme LiveRail \
+        -destination 'platform=iOS Simulator,name=#{device[:name]}' \
+        -only-testing:LiveRailUITests \
+        -resultBundlePath '#{result_path}' \
+        2>&1 | grep -E 'Test (passed|failed|started)|error:' || true")
+
+      # Extract PNG attachments from xcresult into a temp dir
+      tmp_dir = "/tmp/screenshots_#{device[:tag]}"
+      sh("rm -rf '#{tmp_dir}' && mkdir -p '#{tmp_dir}'")
+      sh("python3 '../fastlane/extract_screenshots.py' '#{result_path}' '#{device[:tag]}' '#{tmp_dir}'")
+
+      # Copy extracted screenshots into every locale folder
+      locales.each do |locale|
+        dest = "../fastlane/screenshots/#{locale}"
+        sh("mkdir -p '#{dest}'")
+        sh("cp '#{tmp_dir}'/#{device[:tag]}-screenshot-*.png '#{dest}/' 2>/dev/null || true")
+      end
+
+      UI.success("✅ #{device[:name]} screenshots copied to fastlane/screenshots/")
+    end
+  end
+
+  desc "Upload text metadata to App Store Connect (descriptions, keywords, subtitle, etc.)"
   lane :metadata do
     upload_to_app_store(
       api_key: app_store_connect_api_key(
@@ -28,10 +65,40 @@ platform :ios do
       ),
       skip_binary_upload: true,
       skip_app_version_update: true,
+      skip_screenshots: true,
+      submit_for_review: false,
+      automatic_release: false,
+      precheck_include_in_app_purchases: false,
+      force: true,
+      app_rating_config_path: "fastlane/age_rating_config.json",
+      app_review_information: {
+        first_name: "Darryl",
+        last_name: "Cauldwell",
+        phone_number: "+447817352343",
+        email_address: "darryl_cauldwell@hotmail.com",
+        demo_user: "",
+        demo_password: "",
+        notes: "Live train departure data from the UK National Rail network via Darwin OpenLDBWS. Network connectivity is required. No login or account needed."
+      }
+    )
+  end
+
+  desc "Upload screenshots to App Store Connect"
+  lane :screenshots do
+    upload_to_app_store(
+      api_key: app_store_connect_api_key(
+        key_id: "2QUU3J6S3D",
+        issuer_id: "39bba98a-c143-49fe-ab48-839ff38b4edd",
+        key_filepath: "fastlane/AuthKey_2QUU3J6S3D.p8"
+      ),
+      skip_binary_upload: true,
+      skip_app_version_update: true,
+      skip_metadata: true,
       overwrite_screenshots: true,
       submit_for_review: false,
       automatic_release: false,
-      precheck_include_in_app_purchases: false
+      precheck_include_in_app_purchases: false,
+      force: true
     )
   end
 
@@ -46,14 +113,14 @@ platform :ios do
 
     # Increment build number
     increment_build_number(
-      xcodeproj: "trainTime.xcodeproj"
+      xcodeproj: "LiveRail.xcodeproj"
     )
 
     # Build the app (automatic signing handles provisioning)
     build_app(
-      scheme: "trainTime",
+      scheme: "LiveRail",
       export_method: "app-store",
-      project: "trainTime.xcodeproj",
+      project: "LiveRail.xcodeproj",
       destination: "generic/platform=iOS",
       xcargs: "-allowProvisioningUpdates",
       export_options: {
@@ -80,14 +147,14 @@ platform :ios do
 
     # Increment build number
     increment_build_number(
-      xcodeproj: "trainTime.xcodeproj"
+      xcodeproj: "LiveRail.xcodeproj"
     )
 
     # Build the app
     build_app(
-      scheme: "trainTime",
+      scheme: "LiveRail",
       export_method: "app-store",
-      project: "trainTime.xcodeproj",
+      project: "LiveRail.xcodeproj",
       destination: "generic/platform=iOS",
       xcargs: "-allowProvisioningUpdates",
       export_options: {
@@ -102,16 +169,25 @@ platform :ios do
       submit_for_review: false,
       automatic_release: false,
       overwrite_screenshots: true,
-      precheck_include_in_app_purchases: false
+      precheck_include_in_app_purchases: false,
+      app_review_information: {
+        first_name: "Darryl",
+        last_name: "Cauldwell",
+        phone_number: "+447817352343",
+        email_address: "darryl_cauldwell@hotmail.com",
+        demo_user: "",
+        demo_password: "",
+        notes: "Live train departure data from the UK National Rail network via Darwin OpenLDBWS. Network connectivity is required. No login or account needed."
+      }
     )
   end
 
   desc "Build archive only (no upload)"
   lane :build do
     build_app(
-      scheme: "trainTime",
+      scheme: "LiveRail",
       export_method: "app-store",
-      project: "trainTime.xcodeproj",
+      project: "LiveRail.xcodeproj",
       destination: "generic/platform=iOS"
     )
   end

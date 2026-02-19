@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EAB4D1C2F45BAAA00B0881A /* LiveRailWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AB100018 /* LiveRailWidgetExtension.appex */; };
 		AA000001 /* LiveRailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000001 /* LiveRailApp.swift */; };
 		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000002 /* ContentView.swift */; };
 		AA000003 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000003 /* AppColors.swift */; };
@@ -17,10 +16,8 @@
 		AA000007 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000007 /* Station.swift */; };
 		AA000008 /* SavedJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000008 /* SavedJourney.swift */; };
 		AA000009 /* CachedDeparture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000009 /* CachedDeparture.swift */; };
-		AA000010 /* CachedServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000010 /* CachedServiceDetail.swift */; };
 		AA000011 /* DepartureBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011 /* DepartureBoard.swift */; };
 		AA000012 /* TrainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000012 /* TrainService.swift */; };
-		AA000013 /* ServiceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000013 /* ServiceDetail.swift */; };
 		AA000014 /* CallingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000014 /* CallingPoint.swift */; };
 		AA000015 /* ServiceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000015 /* ServiceLocation.swift */; };
 		AA000016 /* HuxleyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000016 /* HuxleyAPIService.swift */; };
@@ -28,18 +25,12 @@
 		AA000018 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000018 /* CacheService.swift */; };
 		AA000019 /* ConnectivityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000019 /* ConnectivityMonitor.swift */; };
 		AA000020 /* RefreshCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000020 /* RefreshCoordinator.swift */; };
-		AA000021 /* TrainPositionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000021 /* TrainPositionCalculator.swift */; };
 		AA000022 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000022 /* LocationService.swift */; };
 		AA000023 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000023 /* NavigationService.swift */; };
 		AA000024 /* JourneySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000024 /* JourneySearchView.swift */; };
 		AA000025 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000025 /* StationPickerView.swift */; };
 		AA000026 /* DepartureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000026 /* DepartureListView.swift */; };
 		AA000027 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000027 /* DepartureRow.swift */; };
-		AA000028 /* ServiceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000028 /* ServiceContainerView.swift */; };
-		AA000029 /* ServiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000029 /* ServiceDetailView.swift */; };
-		AA000030 /* CallingPointRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000030 /* CallingPointRow.swift */; };
-		AA000031 /* TrainMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000031 /* TrainMapView.swift */; };
-		AA000032 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000032 /* ScheduleView.swift */; };
 		AA000033 /* GetToStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000033 /* GetToStationView.swift */; };
 		AA000034 /* SavedJourneysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000034 /* SavedJourneysView.swift */; };
 		AA000035 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000035 /* SettingsView.swift */; };
@@ -51,13 +42,13 @@
 		AA000041 /* JourneyPlanningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000042 /* JourneyPlanningService.swift */; };
 		AA000042 /* SmartJourneyPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000043 /* SmartJourneyPlanner.swift */; };
 		AA000043 /* JourneyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000044 /* JourneyCard.swift */; };
-		AACD0003 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD0003 /* HistoryView.swift */; };
+
 		AA000044 /* JourneyPlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000045 /* JourneyPlannerView.swift */; };
+		AACD0008 /* GetHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD0008 /* GetHomeView.swift */; };
 		AA000045 /* JourneyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000046 /* JourneyDetailView.swift */; };
 		AA100001 /* HapticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100001 /* HapticService.swift */; };
+		AABB0010 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABB0011 /* AppLogger.swift */; };
 		AA100002 /* RecentRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100002 /* RecentRoute.swift */; };
-		AA100003 /* TrainActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100003 /* TrainActivityAttributes.swift */; };
-		AA100004 /* LiveActivityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100004 /* LiveActivityService.swift */; };
 		AA100005 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100005 /* CarPlaySceneDelegate.swift */; };
 		AA100006 /* CarPlayDepartureItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100006 /* CarPlayDepartureItem.swift */; };
 		AA100007 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = AB100007 /* Localizable.xcstrings */; };
@@ -65,36 +56,17 @@
 		AA100010 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100010 /* InfoPlist.strings */; };
 		AA100011 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100011 /* InfoPlist.strings */; };
 		AA100012 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB100012 /* InfoPlist.strings */; };
-		AA100013 /* WidgetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100013 /* WidgetJourney.swift */; };
 		AA100019 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB100019 /* CarPlay.framework */; };
 		AA100020 /* ActivityKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB100020 /* ActivityKit.framework */; };
-		AA200001 /* LiveRailWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100014 /* LiveRailWidget.swift */; };
-		AA200002 /* NextDepartureWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100015 /* NextDepartureWidget.swift */; };
-		AA200003 /* NextDepartureWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100016 /* NextDepartureWidgetView.swift */; };
-		AA200004 /* WidgetJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100013 /* WidgetJourney.swift */; };
-		AA200005 /* TrainLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100017 /* TrainLiveActivity.swift */; };
-		AA200006 /* TrainActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB100003 /* TrainActivityAttributes.swift */; };
-		AA200007 /* DepartureBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000011 /* DepartureBoard.swift */; };
-		AA200008 /* TrainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000012 /* TrainService.swift */; };
-		AA200009 /* ServiceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000015 /* ServiceLocation.swift */; };
-		AA200010 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB000006 /* Formatters.swift */; };
-		AA300001 /* LiveRailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300001 /* LiveRailUITests.swift */; };
+		AA300001 /* trainTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300001 /* trainTimeUITests.swift */; };
 		AA300002 /* ScreenshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300002 /* ScreenshotHelper.swift */; };
 		AA300003 /* UITestSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300003 /* UITestSetup.swift */; };
 		AA300004 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300004 /* TestHelpers.swift */; };
 		AA300005 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB300006 /* Config.swift */; };
-		EF12387C8B2EC745D1933B98 /* HSPModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64B127EB03914726953F1E /* HSPModels.swift */; };
-		EF79037F28D15B4BD487BDEB /* NetworkRailHSPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AE100007 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE000004 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE100001;
-			remoteInfo = LiveRailWidget;
-		};
 		AE300001 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE000004 /* Project object */;
@@ -105,17 +77,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AE100005 /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				3EAB4D1C2F45BAAA00B0881A /* LiveRailWidgetExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -129,10 +90,8 @@
 		AB000007 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		AB000008 /* SavedJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJourney.swift; sourceTree = "<group>"; };
 		AB000009 /* CachedDeparture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedDeparture.swift; sourceTree = "<group>"; };
-		AB000010 /* CachedServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedServiceDetail.swift; sourceTree = "<group>"; };
 		AB000011 /* DepartureBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureBoard.swift; sourceTree = "<group>"; };
 		AB000012 /* TrainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainService.swift; sourceTree = "<group>"; };
-		AB000013 /* ServiceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetail.swift; sourceTree = "<group>"; };
 		AB000014 /* CallingPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingPoint.swift; sourceTree = "<group>"; };
 		AB000015 /* ServiceLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocation.swift; sourceTree = "<group>"; };
 		AB000016 /* HuxleyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuxleyAPIService.swift; sourceTree = "<group>"; };
@@ -140,18 +99,12 @@
 		AB000018 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		AB000019 /* ConnectivityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityMonitor.swift; sourceTree = "<group>"; };
 		AB000020 /* RefreshCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshCoordinator.swift; sourceTree = "<group>"; };
-		AB000021 /* TrainPositionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainPositionCalculator.swift; sourceTree = "<group>"; };
 		AB000022 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		AB000023 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 		AB000024 /* JourneySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneySearchView.swift; sourceTree = "<group>"; };
 		AB000025 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
 		AB000026 /* DepartureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureListView.swift; sourceTree = "<group>"; };
 		AB000027 /* DepartureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartureRow.swift; sourceTree = "<group>"; };
-		AB000028 /* ServiceContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainerView.swift; sourceTree = "<group>"; };
-		AB000029 /* ServiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailView.swift; sourceTree = "<group>"; };
-		AB000030 /* CallingPointRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingPointRow.swift; sourceTree = "<group>"; };
-		AB000031 /* TrainMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainMapView.swift; sourceTree = "<group>"; };
-		AB000032 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		AB000033 /* GetToStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToStationView.swift; sourceTree = "<group>"; };
 		AB000034 /* SavedJourneysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedJourneysView.swift; sourceTree = "<group>"; };
 		AB000035 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -165,11 +118,11 @@
 		AB000043 /* SmartJourneyPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartJourneyPlanner.swift; sourceTree = "<group>"; };
 		AB000044 /* JourneyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyCard.swift; sourceTree = "<group>"; };
 		AB000045 /* JourneyPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyPlannerView.swift; sourceTree = "<group>"; };
+		ABCD0008 /* GetHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeView.swift; sourceTree = "<group>"; };
 		AB000046 /* JourneyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyDetailView.swift; sourceTree = "<group>"; };
 		AB100001 /* HapticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticService.swift; sourceTree = "<group>"; };
+		AABB0011 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
 		AB100002 /* RecentRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRoute.swift; sourceTree = "<group>"; };
-		AB100003 /* TrainActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainActivityAttributes.swift; sourceTree = "<group>"; };
-		AB100004 /* LiveActivityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityService.swift; sourceTree = "<group>"; };
 		AB100005 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		AB100006 /* CarPlayDepartureItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayDepartureItem.swift; sourceTree = "<group>"; };
 		AB100007 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -178,25 +131,16 @@
 		AB100010 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB100011 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB100012 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AB100013 /* WidgetJourney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetJourney.swift; sourceTree = "<group>"; };
-		AB100014 /* LiveRailWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRailWidget.swift; sourceTree = "<group>"; };
-		AB100015 /* NextDepartureWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDepartureWidget.swift; sourceTree = "<group>"; };
-		AB100016 /* NextDepartureWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDepartureWidgetView.swift; sourceTree = "<group>"; };
-		AB100017 /* TrainLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainLiveActivity.swift; sourceTree = "<group>"; };
-		AB100018 /* LiveRailWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveRailWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB100019 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
 		AB100020 /* ActivityKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework; path = System/Library/Frameworks/ActivityKit.framework; sourceTree = SDKROOT; };
-		AB100021 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		AB300000 /* LiveRailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveRailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB300001 /* LiveRailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRailUITests.swift; sourceTree = "<group>"; };
+		AB300001 /* trainTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainTimeUITests.swift; sourceTree = "<group>"; };
 		AB300002 /* ScreenshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotHelper.swift; sourceTree = "<group>"; };
 		AB300003 /* UITestSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSetup.swift; sourceTree = "<group>"; };
 		AB300004 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		AB300005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB300006 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		EF64B127EB03914726953F1E /* HSPModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HSPModels.swift; path = LiveRail/Models/API/HSPModels.swift; sourceTree = "<group>"; };
-		ABCD0003 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkRailHSPService.swift; path = LiveRail/Services/NetworkRailHSPService.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,13 +150,6 @@
 			files = (
 				AA100019 /* CarPlay.framework in Frameworks */,
 				AA100020 /* ActivityKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE100003 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,24 +163,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3EAB4D1D2F45BAAA00B0881A /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				EF96710E744B5F4A59B68E58 /* NetworkRailHSPService.swift */,
-				EF64B127EB03914726953F1E /* HSPModels.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		AD000001 = {
 			isa = PBXGroup;
 			children = (
 				AD000002 /* LiveRail */,
-				AD100002 /* LiveRailWidget */,
 				AD300001 /* LiveRailUITests */,
 				AD100007 /* Frameworks */,
 				AD000003 /* Products */,
-				3EAB4D1D2F45BAAA00B0881A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -272,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				AB000000 /* LiveRail.app */,
-				AB100018 /* LiveRailWidgetExtension.appex */,
 				AB300000 /* LiveRailUITests.xctest */,
 			);
 			name = Products;
@@ -282,13 +207,10 @@
 			isa = PBXGroup;
 			children = (
 				AB000007 /* Station.swift */,
-				AB100021 /* AppLanguage.swift */,
 				AB000008 /* SavedJourney.swift */,
 				AB000009 /* CachedDeparture.swift */,
-				AB000010 /* CachedServiceDetail.swift */,
 				AB000041 /* CachedJourney.swift */,
 				AB100002 /* RecentRoute.swift */,
-				AB100003 /* TrainActivityAttributes.swift */,
 				AD000009 /* API */,
 			);
 			path = Models;
@@ -302,10 +224,8 @@
 				AB000018 /* CacheService.swift */,
 				AB000019 /* ConnectivityMonitor.swift */,
 				AB000020 /* RefreshCoordinator.swift */,
-				AB000021 /* TrainPositionCalculator.swift */,
 				AB000022 /* LocationService.swift */,
 				AB000023 /* NavigationService.swift */,
-				AB100004 /* LiveActivityService.swift */,
 				AB000042 /* JourneyPlanningService.swift */,
 				AB000043 /* SmartJourneyPlanner.swift */,
 			);
@@ -317,14 +237,11 @@
 			children = (
 				AD000010 /* Search */,
 				AD000011 /* Departures */,
-				AD000012 /* ServiceDetail */,
-				AD000013 /* Map */,
-				AD000014 /* Schedule */,
 				AD000015 /* Navigation */,
 				AD000016 /* SavedJourneys */,
 				AD000017 /* Settings */,
 				AD000018 /* JourneyPlanner */,
-				ABCD0005 /* History */,
+				ABCD0007 /* GetHome */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +255,7 @@
 				AB000005 /* GlassDesignSystem.swift */,
 				AB000006 /* Formatters.swift */,
 				AB100001 /* HapticService.swift */,
+				AABB0011 /* AppLogger.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,7 +275,6 @@
 			children = (
 				AB000011 /* DepartureBoard.swift */,
 				AB000012 /* TrainService.swift */,
-				AB000013 /* ServiceDetail.swift */,
 				AB000014 /* CallingPoint.swift */,
 				AB000015 /* ServiceLocation.swift */,
 				AB000039 /* Journey.swift */,
@@ -382,32 +299,6 @@
 				AB000027 /* DepartureRow.swift */,
 			);
 			path = Departures;
-			sourceTree = "<group>";
-		};
-		AD000012 /* ServiceDetail */ = {
-			isa = PBXGroup;
-			children = (
-				AB000028 /* ServiceContainerView.swift */,
-				AB000029 /* ServiceDetailView.swift */,
-				AB000030 /* CallingPointRow.swift */,
-			);
-			path = ServiceDetail;
-			sourceTree = "<group>";
-		};
-		AD000013 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				AB000031 /* TrainMapView.swift */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		AD000014 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
-				AB000032 /* ScheduleView.swift */,
-			);
-			path = Schedule;
 			sourceTree = "<group>";
 		};
 		AD000015 /* Navigation */ = {
@@ -444,12 +335,12 @@
 			path = JourneyPlanner;
 			sourceTree = "<group>";
 		};
-		ABCD0005 /* History */ = {
+		ABCD0007 /* GetHome */ = {
 			isa = PBXGroup;
 			children = (
-				ABCD0003 /* HistoryView.swift */,
+				ABCD0008 /* GetHomeView.swift */,
 			);
-			path = History;
+			path = GetHome;
 			sourceTree = "<group>";
 		};
 		AD100001 /* CarPlay */ = {
@@ -459,18 +350,6 @@
 				AB100006 /* CarPlayDepartureItem.swift */,
 			);
 			path = CarPlay;
-			sourceTree = "<group>";
-		};
-		AD100002 /* LiveRailWidget */ = {
-			isa = PBXGroup;
-			children = (
-				AB100014 /* LiveRailWidget.swift */,
-				AB100015 /* NextDepartureWidget.swift */,
-				AB100016 /* NextDepartureWidgetView.swift */,
-				AB100013 /* WidgetJourney.swift */,
-				AB100017 /* TrainLiveActivity.swift */,
-			);
-			path = LiveRailWidget;
 			sourceTree = "<group>";
 		};
 		AD100007 /* Frameworks */ = {
@@ -485,7 +364,7 @@
 		AD300001 /* LiveRailUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AB300001 /* LiveRailUITests.swift */,
+				AB300001 /* trainTimeUITests.swift */,
 				AB300002 /* ScreenshotHelper.swift */,
 				AB300003 /* UITestSetup.swift */,
 				AB300004 /* TestHelpers.swift */,
@@ -504,34 +383,15 @@
 				AE000002 /* Sources */,
 				AC000001 /* Frameworks */,
 				AE000003 /* Resources */,
-				AE100005 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AE100006 /* PBXTargetDependency */,
 			);
 			name = LiveRail;
 			productName = trainTime;
 			productReference = AB000000 /* LiveRail.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AE100001 /* LiveRailWidget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF100003 /* Build configuration list for PBXNativeTarget "LiveRailWidget" */;
-			buildPhases = (
-				AE100002 /* Sources */,
-				AE100003 /* Frameworks */,
-				AE100004 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LiveRailWidget;
-			productName = LiveRailWidgetExtension;
-			productReference = AB100018 /* LiveRailWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		AE300000 /* LiveRailUITests */ = {
 			isa = PBXNativeTarget;
@@ -564,9 +424,6 @@
 					AE000001 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					AE100001 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					AE300000 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = AE000001;
@@ -592,7 +449,6 @@
 			projectRoot = "";
 			targets = (
 				AE000001 /* LiveRail */,
-				AE100001 /* LiveRailWidget */,
 				AE300000 /* LiveRailUITests */,
 			);
 		};
@@ -610,13 +466,6 @@
 				AA100010 /* InfoPlist.strings in Resources */,
 				AA100011 /* InfoPlist.strings in Resources */,
 				AA100012 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE100004 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,10 +493,8 @@
 				AA000007 /* Station.swift in Sources */,
 					AA000008 /* SavedJourney.swift in Sources */,
 				AA000009 /* CachedDeparture.swift in Sources */,
-				AA000010 /* CachedServiceDetail.swift in Sources */,
 				AA000011 /* DepartureBoard.swift in Sources */,
 				AA000012 /* TrainService.swift in Sources */,
-				AA000013 /* ServiceDetail.swift in Sources */,
 				AA000014 /* CallingPoint.swift in Sources */,
 				AA000015 /* ServiceLocation.swift in Sources */,
 				AA000016 /* HuxleyAPIService.swift in Sources */,
@@ -655,56 +502,31 @@
 				AA000018 /* CacheService.swift in Sources */,
 				AA000019 /* ConnectivityMonitor.swift in Sources */,
 				AA000020 /* RefreshCoordinator.swift in Sources */,
-				AA000021 /* TrainPositionCalculator.swift in Sources */,
 				AA000022 /* LocationService.swift in Sources */,
 				AA000023 /* NavigationService.swift in Sources */,
 				AA000024 /* JourneySearchView.swift in Sources */,
 				AA000025 /* StationPickerView.swift in Sources */,
 				AA000026 /* DepartureListView.swift in Sources */,
 				AA000027 /* DepartureRow.swift in Sources */,
-				AA000028 /* ServiceContainerView.swift in Sources */,
-				AA000029 /* ServiceDetailView.swift in Sources */,
-				AA000030 /* CallingPointRow.swift in Sources */,
-				AA000031 /* TrainMapView.swift in Sources */,
-				AA000032 /* ScheduleView.swift in Sources */,
 				AA000033 /* GetToStationView.swift in Sources */,
 				AA000034 /* SavedJourneysView.swift in Sources */,
 				AA000035 /* SettingsView.swift in Sources */,
 				AA100001 /* HapticService.swift in Sources */,
+				AABB0010 /* AppLogger.swift in Sources */,
 				AA100002 /* RecentRoute.swift in Sources */,
-				AA100003 /* TrainActivityAttributes.swift in Sources */,
-				AA100004 /* LiveActivityService.swift in Sources */,
 				AA100005 /* CarPlaySceneDelegate.swift in Sources */,
 				AA100006 /* CarPlayDepartureItem.swift in Sources */,
-				AA100013 /* WidgetJourney.swift in Sources */,
-				EF79037F28D15B4BD487BDEB /* NetworkRailHSPService.swift in Sources */,
-				EF12387C8B2EC745D1933B98 /* HSPModels.swift in Sources */,
+
 				AA000038 /* Journey.swift in Sources */,
 				AA000039 /* JourneyAPIModels.swift in Sources */,
 				AA000040 /* CachedJourney.swift in Sources */,
 				AA000041 /* JourneyPlanningService.swift in Sources */,
 				AA000042 /* SmartJourneyPlanner.swift in Sources */,
 				AA000043 /* JourneyCard.swift in Sources */,
-				AACD0003 /* HistoryView.swift in Sources */,
+
 				AA000044 /* JourneyPlannerView.swift in Sources */,
+				AACD0008 /* GetHomeView.swift in Sources */,
 				AA000045 /* JourneyDetailView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE100002 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA200001 /* LiveRailWidget.swift in Sources */,
-				AA200002 /* NextDepartureWidget.swift in Sources */,
-				AA200003 /* NextDepartureWidgetView.swift in Sources */,
-				AA200004 /* WidgetJourney.swift in Sources */,
-				AA200005 /* TrainLiveActivity.swift in Sources */,
-				AA200006 /* TrainActivityAttributes.swift in Sources */,
-				AA200007 /* DepartureBoard.swift in Sources */,
-				AA200008 /* TrainService.swift in Sources */,
-				AA200009 /* ServiceLocation.swift in Sources */,
-				AA200010 /* Formatters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,7 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA300001 /* LiveRailUITests.swift in Sources */,
+				AA300001 /* trainTimeUITests.swift in Sources */,
 				AA300002 /* ScreenshotHelper.swift in Sources */,
 				AA300003 /* UITestSetup.swift in Sources */,
 				AA300004 /* TestHelpers.swift in Sources */,
@@ -722,11 +544,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AE100006 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE100001 /* LiveRailWidget */;
-			targetProxy = AE100007 /* PBXContainerItemProxy */;
-		};
 		AE300002 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE000001 /* LiveRail */;
@@ -867,7 +684,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LiveRail/trainTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveRail/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LiveRail;
@@ -900,7 +717,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LiveRail/trainTime.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveRail/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LiveRail;
@@ -926,65 +743,11 @@
 			};
 			name = Release;
 		};
-		AF100001 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveRailWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveRailWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.widget;
-				PRODUCT_NAME = LiveRailWidgetExtension;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AF100002 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveRailWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveRailWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.dreamfold.LiveRail.widget;
-				PRODUCT_NAME = LiveRailWidgetExtension;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		AF300002 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LiveRailUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1001,7 +764,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = trainTime;
+				TEST_TARGET_NAME = LiveRail;
 			};
 			name = Debug;
 		};
@@ -1009,7 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LiveRailUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -1026,7 +789,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = trainTime;
+				TEST_TARGET_NAME = LiveRail;
 			};
 			name = Release;
 		};
@@ -1047,15 +810,6 @@
 			buildConfigurations = (
 				AF000006 /* Debug */,
 				AF000007 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF100003 /* Build configuration list for PBXNativeTarget "LiveRailWidget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF100001 /* Debug */,
-				AF100002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

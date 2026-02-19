@@ -25,19 +25,6 @@ struct JourneySearchView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: Spacing.xl) {
-                    // Header
-                    VStack(spacing: Spacing.sm) {
-                        Image(systemName: "tram.fill")
-                            .font(.largeTitle)
-                            .foregroundStyle(AppColors.primary)
-                        Text("LiveRail")
-                            .font(.largeTitle.bold())
-                        Text(String(localized: "Search by route, not by station"))
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                    }
-                    .padding(.top, Spacing.jumbo)
-
                     // Station selection cards
                     VStack(spacing: Spacing.md) {
                         StationSelectionCard(
@@ -79,6 +66,7 @@ struct JourneySearchView: View {
                     Button {
                         HapticService.lightImpact()
                         trackRoute()
+                        saveRouteForCarPlay()
                         navigateToDepartures = true
                     } label: {
                         Label(String(localized: "Find Trains"), systemImage: "magnifyingglass")
@@ -126,10 +114,21 @@ struct JourneySearchView: View {
 
                     Spacer(minLength: Spacing.jumbo)
                 }
+                .padding(.top, Spacing.lg)
             }
-            .navigationTitle(String(localized: "Live"))
+            .navigationTitle(String(localized: "Departures"))
             .navigationBarTitleDisplayMode(.inline)
             .glassNavigation()
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        NotificationCenter.default.post(name: .navigateToSettings, object: nil)
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                    .accessibilityLabel(String(localized: "Settings"))
+                }
+            }
             .sheet(isPresented: $showOriginPicker) {
                 StationPickerView(title: String(localized: "From Station"), stationSearch: stationSearch) { station in
                     origin = station
@@ -163,15 +162,15 @@ struct JourneySearchView: View {
             destinationName: destination.name
         )
         modelContext.insert(journey)
+    }
 
-        // Sync to widget
-        let widgetJourney = WidgetJourney(
-            originCRS: origin.crs,
-            originName: origin.name,
-            destinationCRS: destination.crs,
-            destinationName: destination.name
-        )
-        widgetJourney.save()
+    private func saveRouteForCarPlay() {
+        guard let origin, let destination else { return }
+        UserDefaults.standard.set(origin.crs, forKey: "carplay.originCRS")
+        UserDefaults.standard.set(origin.name, forKey: "carplay.originName")
+        UserDefaults.standard.set(destination.crs, forKey: "carplay.destinationCRS")
+        UserDefaults.standard.set(destination.name, forKey: "carplay.destinationName")
+        NotificationCenter.default.post(name: .routeChanged, object: nil)
     }
 
     private func trackRoute() {
@@ -289,5 +288,7 @@ struct StationSelectionCard: View {
             .glassCard(material: .thin, cornerRadius: CornerRadius.lg, shadowRadius: 6, padding: Spacing.lg)
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(label)
+        .accessibilityIdentifier(label)
     }
 }

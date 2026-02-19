@@ -87,6 +87,7 @@ struct DepartureRow: View {
         .padding(.horizontal)
         .accessibilityElement(children: .combine)
         .accessibilityLabel(accessibilityDescription)
+        .accessibilityIdentifier("departure-row")
     }
 
     private var accessibilityDescription: String {

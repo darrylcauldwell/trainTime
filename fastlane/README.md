@@ -23,13 +23,37 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Build and install to simulator
 
+### ios take_screenshots
+
+```sh
+[bundle exec] fastlane ios take_screenshots
+```
+
+Run UI tests on both device sizes and extract screenshots to fastlane/screenshots
+
 ### ios metadata
 
 ```sh
 [bundle exec] fastlane ios metadata
 ```
 
-Upload metadata and screenshots to App Store Connect
+Upload text metadata to App Store Connect (descriptions, keywords, subtitle, etc.)
+
+### ios screenshots
+
+```sh
+[bundle exec] fastlane ios screenshots
+```
+
+Upload screenshots to App Store Connect
+
+### ios privacy
+
+```sh
+[bundle exec] fastlane ios privacy
+```
+
+Declare App Privacy nutrition labels (Data Not Collected) and publish
 
 ### ios beta
 

@@ -1,0 +1,42 @@
+LiveRail – la forma más inteligente de seguir las salidas de trenes en tiempo real por el Reino Unido. Busca por ruta, no solo por estación, y ve únicamente los trenes que importan para tu viaje.
+
+SOLO TUS TRENES, NADA MÁS
+
+¿Alguna vez has estado en una estación buscando TU tren entre cuarenta más en el tablón? Lo hemos solucionado. Elige origen y destino – solo verás servicios directos. Sin desorden, sin confusión.
+
+RUTAS ALTERNATIVAS
+
+Cuando un tren se cancela, un toque te muestra los demás servicios que siguen funcionando en la misma ruta.
+
+VIAJES CON TRANSBORDO
+
+Cuando no hay servicio directo disponible, LiveRail busca automáticamente conexiones con el desglose completo de cada trayecto: tren, andén y tiempo de conexión.
+
+VOLVER A CASA
+
+Establece tu estación de origen una vez. Pulsa ‘Llevarme a casa’ y LiveRail usa tu ubicación para encontrar las estaciones más cercanas y mostrar los trenes disponibles. En Londres, también muestra las indicaciones de TfL para llegar al andén correcto.
+
+CARPLAY
+
+Consulta las salidas en directo de tu ruta guardada en la pantalla de tu vehículo, sin manos. A tiempo, retrasado con la hora prevista de salida, o cancelado – todo de un vistazo.
+
+SOPORTE SIN CONEXIÓN
+
+¿Sin señal en el túnel? LiveRail guarda en caché tus tablones de salidas recientes. Siempre verás una marca de tiempo para saber cuándo se actualizaron los datos.
+
+RUTAS GUARDADAS Y RECIENTES
+
+Guarda tus viajes favoritos para acceso con un toque. LiveRail también recuerda tus últimas 15 rutas, con la opción de anclar las que usas a diario.
+
+LOS DATOS
+
+• Las 2.595 estaciones ferroviarias del Reino Unido incluidas
+• Datos en directo de National Rail Enquiries (Darwin OpenLDBWS – la fuente oficial)
+• Andenes, retrasos, cancelaciones y motivos de retraso mostrados
+• Información del operador y número de vagones
+• Actualización automática cada 30 segundos (configurable: 15 segundos a 2 minutos)
+• Totalmente accesible: compatible con VoiceOver y Texto Dinámico
+• Disponible en inglés, francés, alemán y español
+• Cero anuncios, cero cuenta requerida, cero seguimiento
+
+Requiere iOS 17 o posterior. CarPlay requiere un vehículo y conexión compatibles.

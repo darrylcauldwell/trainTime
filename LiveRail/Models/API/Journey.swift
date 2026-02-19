@@ -71,12 +71,12 @@ struct Journey: Codable, Identifiable, Hashable {
 
     /// Origin station
     var origin: JourneyLocation {
-        legs.first?.origin ?? JourneyLocation(name: "Unknown", crs: nil, latitude: nil, longitude: nil)
+        legs.first?.origin ?? JourneyLocation(name: "Unknown", crs: nil, latitude: nil, longitude: nil, stopId: nil)
     }
 
     /// Destination station
     var destination: JourneyLocation {
-        legs.last?.destination ?? JourneyLocation(name: "Unknown", crs: nil, latitude: nil, longitude: nil)
+        legs.last?.destination ?? JourneyLocation(name: "Unknown", crs: nil, latitude: nil, longitude: nil, stopId: nil)
     }
 
     /// Unique transport modes used in journey (for icon preview)
@@ -99,6 +99,8 @@ struct JourneyLeg: Codable, Identifiable, Hashable {
     let serviceIdentifier: String? // For trains: serviceID for live detail lookup
     let platform: String?
     let instructions: String? // For walking legs
+    let lineId: String? // TfL line identifier for arrivals lookup (e.g. "victoria")
+    let disruption: String? // Disruption message when a line is suspended or severely delayed
 
     static func == (lhs: JourneyLeg, rhs: JourneyLeg) -> Bool {
         lhs.id == rhs.id
@@ -139,6 +141,7 @@ struct JourneyLocation: Codable, Hashable {
     let crs: String? // CRS code for rail stations
     let latitude: Double?
     let longitude: Double?
+    let stopId: String? // TfL NaptanId for arrivals lookup
 
     /// MapKit coordinate if location data available
     var coordinate: CLLocationCoordinate2D? {

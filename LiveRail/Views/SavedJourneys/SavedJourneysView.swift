@@ -50,24 +50,7 @@ struct SavedJourneysView: View {
             .navigationTitle(String(localized: "Saved"))
             .navigationBarTitleDisplayMode(.inline)
             .glassNavigation()
-            .onChange(of: journeys.count) { _, _ in
-                syncFirstJourneyToWidget()
-            }
-            .onAppear {
-                syncFirstJourneyToWidget()
-            }
         }
-    }
-
-    private func syncFirstJourneyToWidget() {
-        guard let first = journeys.first else { return }
-        let widgetJourney = WidgetJourney(
-            originCRS: first.originCRS,
-            originName: first.originName,
-            destinationCRS: first.destinationCRS,
-            destinationName: first.destinationName
-        )
-        widgetJourney.save()
     }
 
     private func savedJourneyRow(_ journey: SavedJourney) -> some View {

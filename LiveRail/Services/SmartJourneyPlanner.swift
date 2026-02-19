@@ -268,25 +268,29 @@ final class SmartJourneyPlanner {
             name: originName,
             crs: origin,
             latitude: nil,
-            longitude: nil
+            longitude: nil,
+            stopId: nil
         )
         let arrivalInterchangeLocation = JourneyLocation(
             name: arrivalInterchangeName,
             crs: arrivalInterchange,
             latitude: nil,
-            longitude: nil
+            longitude: nil,
+            stopId: nil
         )
         let departureInterchangeLocation = JourneyLocation(
             name: departureInterchangeName,
             crs: departureInterchange,
             latitude: nil,
-            longitude: nil
+            longitude: nil,
+            stopId: nil
         )
         let destinationLocation = JourneyLocation(
             name: secondService.destinationName,
             crs: secondService.destination?.first?.crs,
             latitude: nil,
-            longitude: nil
+            longitude: nil,
+            stopId: nil
         )
 
         // Leg 1: origin → arrival interchange
@@ -301,7 +305,9 @@ final class SmartJourneyPlanner {
             operatorName: firstService.operatorName,
             serviceIdentifier: firstService.serviceID,
             platform: firstService.platform,
-            instructions: nil
+            instructions: nil,
+            lineId: nil,
+            disruption: nil
         )
 
         var legs: [JourneyLeg] = [leg1]
@@ -320,7 +326,9 @@ final class SmartJourneyPlanner {
                 operatorName: nil,
                 serviceIdentifier: nil,
                 platform: nil,
-                instructions: "Walk between stations (~\(walkMinutes) min)"
+                instructions: "Walk between stations (~\(walkMinutes) min)",
+                lineId: nil,
+                disruption: nil
             )
             legs.append(walkLeg)
         }
@@ -337,7 +345,9 @@ final class SmartJourneyPlanner {
             operatorName: secondService.operatorName,
             serviceIdentifier: secondService.serviceID,
             platform: secondService.platform,
-            instructions: nil
+            instructions: nil,
+            lineId: nil,
+            disruption: nil
         )
         legs.append(leg2)
 

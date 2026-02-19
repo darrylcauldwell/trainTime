@@ -55,42 +55,6 @@ final class CacheService {
         }
     }
 
-    // MARK: - Service Detail Cache
-
-    func cacheServiceDetail(_ detail: ServiceDetail, serviceID: String) {
-        do {
-            let data = try JSONEncoder().encode(detail)
-
-            let descriptor = FetchDescriptor<CachedServiceDetail>(
-                predicate: #Predicate { $0.serviceID == serviceID }
-            )
-            let existing = try modelContext.fetch(descriptor)
-            for item in existing {
-                modelContext.delete(item)
-            }
-
-            let cached = CachedServiceDetail(serviceID: serviceID, jsonData: data)
-            modelContext.insert(cached)
-            try modelContext.save()
-        } catch {
-            print("Cache write error: \(error)")
-        }
-    }
-
-    func getCachedServiceDetail(serviceID: String) -> (detail: ServiceDetail, fetchedAt: Date)? {
-        do {
-            let descriptor = FetchDescriptor<CachedServiceDetail>(
-                predicate: #Predicate { $0.serviceID == serviceID }
-            )
-            guard let cached = try modelContext.fetch(descriptor).first,
-                  !cached.isExpired else { return nil }
-            let detail = try JSONDecoder().decode(ServiceDetail.self, from: cached.jsonData)
-            return (detail, cached.fetchedAt)
-        } catch {
-            return nil
-        }
-    }
-
     // MARK: - Journey Cache
 
     func cacheJourney(_ journeys: [Journey], origin: String, destination: String, departureTime: Date) {
@@ -152,11 +116,6 @@ final class CacheService {
                 modelContext.delete(item)
             }
 
-            let details = try modelContext.fetch(FetchDescriptor<CachedServiceDetail>())
-            for item in details where item.isExpired {
-                modelContext.delete(item)
-            }
-
             let journeys = try modelContext.fetch(FetchDescriptor<CachedJourney>())
             for item in journeys where item.isExpired {
                 modelContext.delete(item)
@@ -171,7 +130,6 @@ final class CacheService {
     func clearAllCache() {
         do {
             try modelContext.delete(model: CachedDeparture.self)
-            try modelContext.delete(model: CachedServiceDetail.self)
             try modelContext.delete(model: CachedJourney.self)
             try modelContext.save()
         } catch {

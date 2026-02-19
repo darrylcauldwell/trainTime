@@ -1,61 +1,42 @@
-The smartest way to check UK trains. No more scrolling through endless departures you don't care about—just your route, live times, and offline support.
+LiveRail – the smartest way to track live train departures across the UK. Search by route, not just station, and see only the trains that actually matter to your journey.
 
-WHY YOU'LL LOVE IT
+JUST YOUR TRAINS, NOTHING ELSE
 
-Ever stood at a station squinting at the board, trying to find YOUR train? We fixed that. Pick where you're going from and to—boom, you only see direct services. No clutter, no fuss.
+Ever stood at a station squinting at the board, trying to spot YOUR train among forty others? We fixed that. Pick your origin and destination – you only see direct services. No clutter, no confusion.
 
-TRACK YOUR TRAIN LIKE A PRO
+ALTERNATIVE ROUTES
 
-• Lock Screen Tracking - Your train follows you around (in a good way). Dynamic Island support included
-• Home Widget - Next departure's right there on your home screen
-• Live Map - Watch your service chug along between stations
-• Auto-Updates - Fresh times every 30 seconds. No tapping refresh like a maniac
+When a train is cancelled, one tap shows you other services still running on the same route – so you can get moving rather than staring at a red board.
 
-SMART STUFF THAT JUST WORKS
+CONNECTING JOURNEYS
 
-• Saved Journeys - Tap once for your daily commute
-• Recent Routes - We remember your last 15 searches
-• Two-Way Schedule - Outbound and return trains in one view
-• Plan B Finder - Train cancelled? We'll show you what's still running
-• Get There Directions - How to actually reach the station (London TfL built-in)
+When there’s no direct service, LiveRail automatically searches for connecting journeys across National Rail, with full leg-by-leg breakdowns showing each train, platform, and connection time.
 
-WORKS OFFLINE
+GET HOME
 
-Lost signal in a tunnel? No worries. LiveRail caches everything so you're not stuck staring at a spinner. You'll see when the data's from, no surprises.
+Set your home station once. Whenever you need it, tap ‘Get Me Home’ and LiveRail uses your location to find your nearest stations and show available trains home. In London, it also shows TfL transit directions to get you to the right platform.
 
-LOOKS GORGEOUS
+CARPLAY
 
-• Glass Design - Proper modern UI, not that 2010 stuff
-• Haptic Vibes - Your phone buzzes at the right moments
-• Accessibility - VoiceOver and big text? Sorted
-• 5 Languages - English, Welsh, French, German, Spanish
+View live departures for your saved route on your car’s display, hands-free. On-time, delayed with expected departure time, and cancelled services are all shown at a glance – so you know whether to rush or take your time.
 
-WHAT YOU GET
+OFFLINE SUPPORT
 
-• 198 UK stations (all the big ones)
-• Live National Rail data (the official stuff)
-• Platforms, delays, cancellations—the lot
-• Operator info, stops, scheduled times
-• Real-time status updates
+Lost signal underground? LiveRail caches your recent departure boards. You’ll always see a timestamp so you know when the data is from – no silent failures, no blank screens.
 
-THE QUICK LIST
+SAVED & RECENT ROUTES
 
-✓ Only shows trains for your route
-✓ Lock screen Live Activities
-✓ Home screen widget
-✓ Live train position map
-✓ Works offline with cached data
-✓ Walking/transit directions
-✓ Updates every 30 seconds
-✓ Alternative routes when things go wrong
-✓ Dark mode (obviously)
-✓ Zero ads, zero tracking
+Save your favourite journeys for one-tap access. LiveRail also remembers your 15 most recent routes, with the option to pin the ones you use daily.
 
-WHO IT'S FOR
+THE FACTS
 
-• Commuters who check the same route daily
-• Anyone planning a journey across the UK
-• People tired of cluttered train apps
-• Train geeks who want live tracking
+• All 2,595 UK rail stations included
+• Live data from National Rail Enquiries (Darwin OpenLDBWS – the official source)
+• Platforms, delays, cancellations, and delay reasons displayed
+• Operator information and number of coaches
+• Auto-refreshes every 30 seconds (configurable: 15 seconds to 2 minutes)
+• Fully accessible: VoiceOver and Dynamic Type supported
+• Available in English, French, German, and Spanish
+• Zero ads, zero account required, zero tracking
 
-Free, private, and built for iOS 17+. No sign-up faff—just pick your stations and you're away.
+Requires iOS 17 or later. CarPlay requires a compatible vehicle and connection.

@@ -29,7 +29,7 @@ enum Config {
     }()
     
     /// Network Rail Open Data credentials
-    /// Register at https://opendata.nationalrail.co.uk/
+    /// Register at https://raildata.org.uk/
     static let defaultNetworkRailUsername: String = {
         if let buildUsername = ProcessInfo.processInfo.environment["NETWORK_RAIL_USERNAME"], !buildUsername.isEmpty {
             return buildUsername
@@ -44,8 +44,20 @@ enum Config {
         return "" // User must provide their own
     }()
 
-    /// App version
-    static let appVersion = "1.0.0"
+    /// App version read from bundle (CFBundleShortVersionString)
+    static var appVersion: String {
+        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "—"
+    }
+
+    /// TfL Unified API key — used for Get Home and London journey planning
+    /// Registered under the LiveRail subscription (500 req/min)
+    static let defaultTfLAppKey: String = {
+        if let envKey = ProcessInfo.processInfo.environment["TFL_APP_KEY"], !envKey.isEmpty {
+            return envKey
+        }
+        let parts = ["25c691ef", "0fa84750", "8d3aecf7", "3823ec8d"]
+        return parts.joined()
+    }()
 
     /// Huxley2 API base URL
     static let huxleyBaseURL = "https://huxley2.azurewebsites.net"
